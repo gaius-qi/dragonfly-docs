@@ -2,28 +2,28 @@
 
 
 <a name="overview"></a>
-## Overview
+## 概览
 Dragonfly Manager Server
 
 
-### Version information
-*Version* : 1.0.0
+### 版本信息
+*版本* : 1.0.0
 
 
-### License information
-*License* : Apache 2.0  
-*Terms of service* : null
+### 许可信息
+*许可证* : Apache 2.0  
+*服务条款* : null
 
 
 ### URI scheme
-*Host* : localhost:8080  
-*BasePath* : /api/v1
+*域名* : localhost:8080  
+*基础路径* : /api/v1
 
 
 
 
 <a name="paths"></a>
-## Paths
+## 路径
 
 <a name="api-v1-applications-post"></a>
 ### Create Application
@@ -32,38 +32,38 @@ POST /api/v1/applications
 ```
 
 
-#### Description
+#### 说明
 create by json config
 
 
-#### Parameters
+#### 参数
 
-|Type|Name|Description|Schema|
+|类型|名称|说明|类型|
 |---|---|---|---|
-|**Body**|**Application**  <br>*required*|Application|[types.CreateApplicationRequest](#types-createapplicationrequest)|
+|**Body**|**Application**  <br>*必填*|Application|[types.CreateApplicationRequest](#types-createapplicationrequest)|
 
 
-#### Responses
+#### 响应
 
-|HTTP Code|Description|Schema|
+|HTTP代码|说明|类型|
 |---|---|---|
 |**200**|OK|[model.Application](#model-application)|
-|**400**||No Content|
-|**404**||No Content|
-|**500**||No Content|
+|**400**||无内容|
+|**404**||无内容|
+|**500**||无内容|
 
 
-#### Consumes
-
-* `application/json`
-
-
-#### Produces
+#### 消耗
 
 * `application/json`
 
 
-#### Tags
+#### 生成
+
+* `application/json`
+
+
+#### 标签
 
 * Application
 
@@ -75,39 +75,39 @@ GET /api/v1/applications
 ```
 
 
-#### Description
+#### 说明
 Get Applications
 
 
-#### Parameters
+#### 参数
 
-|Type|Name|Description|Schema|Default|
+|类型|名称|说明|类型|默认值|
 |---|---|---|---|---|
-|**Query**|**page**  <br>*required*|current page|integer|`0`|
-|**Query**|**per_page**  <br>*required*|return max item count, default 10, max 50|integer|`10`|
+|**Query**|**page**  <br>*必填*|current page|integer|`0`|
+|**Query**|**per_page**  <br>*必填*|return max item count, default 10, max 50|integer|`10`|
 
 
-#### Responses
+#### 响应
 
-|HTTP Code|Description|Schema|
+|HTTP代码|说明|类型|
 |---|---|---|
 |**200**|OK|< [model.Application](#model-application) > array|
-|**400**||No Content|
-|**404**||No Content|
-|**500**||No Content|
+|**400**||无内容|
+|**404**||无内容|
+|**500**||无内容|
 
 
-#### Consumes
-
-* `application/json`
-
-
-#### Produces
+#### 消耗
 
 * `application/json`
 
 
-#### Tags
+#### 生成
+
+* `application/json`
+
+
+#### 标签
 
 * Application
 
@@ -119,38 +119,38 @@ GET /api/v1/applications/{id}
 ```
 
 
-#### Description
+#### 说明
 Get Application by id
 
 
-#### Parameters
+#### 参数
 
-|Type|Name|Description|Schema|
+|类型|名称|说明|类型|
 |---|---|---|---|
-|**Path**|**id**  <br>*required*|id|string|
+|**Path**|**id**  <br>*必填*|id|string|
 
 
-#### Responses
+#### 响应
 
-|HTTP Code|Description|Schema|
+|HTTP代码|说明|类型|
 |---|---|---|
 |**200**|OK|[model.Application](#model-application)|
-|**400**||No Content|
-|**404**||No Content|
-|**500**||No Content|
+|**400**||无内容|
+|**404**||无内容|
+|**500**||无内容|
 
 
-#### Consumes
-
-* `application/json`
-
-
-#### Produces
+#### 消耗
 
 * `application/json`
 
 
-#### Tags
+#### 生成
+
+* `application/json`
+
+
+#### 标签
 
 * Application
 
@@ -162,38 +162,38 @@ DELETE /api/v1/applications/{id}
 ```
 
 
-#### Description
+#### 说明
 Destroy by id
 
 
-#### Parameters
+#### 参数
 
-|Type|Name|Description|Schema|
+|类型|名称|说明|类型|
 |---|---|---|---|
-|**Path**|**id**  <br>*required*|id|string|
+|**Path**|**id**  <br>*必填*|id|string|
 
 
-#### Responses
+#### 响应
 
-|HTTP Code|Schema|
+|HTTP代码|类型|
 |---|---|
-|**200**|No Content|
-|**400**|No Content|
-|**404**|No Content|
-|**500**|No Content|
+|**200**|无内容|
+|**400**|无内容|
+|**404**|无内容|
+|**500**|无内容|
 
 
-#### Consumes
-
-* `application/json`
-
-
-#### Produces
+#### 消耗
 
 * `application/json`
 
 
-#### Tags
+#### 生成
+
+* `application/json`
+
+
+#### 标签
 
 * Application
 
@@ -205,39 +205,39 @@ PATCH /api/v1/applications/{id}
 ```
 
 
-#### Description
+#### 说明
 Update by json config
 
 
-#### Parameters
+#### 参数
 
-|Type|Name|Description|Schema|
+|类型|名称|说明|类型|
 |---|---|---|---|
-|**Path**|**id**  <br>*required*|id|string|
-|**Body**|**Application**  <br>*required*|Application|[types.UpdateApplicationRequest](#types-updateapplicationrequest)|
+|**Path**|**id**  <br>*必填*|id|string|
+|**Body**|**Application**  <br>*必填*|Application|[types.UpdateApplicationRequest](#types-updateapplicationrequest)|
 
 
-#### Responses
+#### 响应
 
-|HTTP Code|Description|Schema|
+|HTTP代码|说明|类型|
 |---|---|---|
 |**200**|OK|[model.Application](#model-application)|
-|**400**||No Content|
-|**404**||No Content|
-|**500**||No Content|
+|**400**||无内容|
+|**404**||无内容|
+|**500**||无内容|
 
 
-#### Consumes
-
-* `application/json`
-
-
-#### Produces
+#### 消耗
 
 * `application/json`
 
 
-#### Tags
+#### 生成
+
+* `application/json`
+
+
+#### 标签
 
 * Application
 
@@ -249,39 +249,39 @@ PUT /api/v1/applications/{id}/scheduler-clusters/{scheduler_cluster_id}
 ```
 
 
-#### Description
+#### 说明
 Add Scheduler to Application
 
 
-#### Parameters
+#### 参数
 
-|Type|Name|Description|Schema|
+|类型|名称|说明|类型|
 |---|---|---|---|
-|**Path**|**id**  <br>*required*|id|string|
-|**Path**|**scheduler_cluster_id**  <br>*required*|scheduler cluster id|string|
+|**Path**|**id**  <br>*必填*|id|string|
+|**Path**|**scheduler_cluster_id**  <br>*必填*|scheduler cluster id|string|
 
 
-#### Responses
+#### 响应
 
-|HTTP Code|Schema|
+|HTTP代码|类型|
 |---|---|
-|**200**|No Content|
-|**400**|No Content|
-|**404**|No Content|
-|**500**|No Content|
+|**200**|无内容|
+|**400**|无内容|
+|**404**|无内容|
+|**500**|无内容|
 
 
-#### Consumes
-
-* `application/json`
-
-
-#### Produces
+#### 消耗
 
 * `application/json`
 
 
-#### Tags
+#### 生成
+
+* `application/json`
+
+
+#### 标签
 
 * Application
 
@@ -293,39 +293,39 @@ DELETE /api/v1/applications/{id}/scheduler-clusters/{scheduler_cluster_id}
 ```
 
 
-#### Description
+#### 说明
 Delete Scheduler to Application
 
 
-#### Parameters
+#### 参数
 
-|Type|Name|Description|Schema|
+|类型|名称|说明|类型|
 |---|---|---|---|
-|**Path**|**id**  <br>*required*|id|string|
-|**Path**|**scheduler_cluster_id**  <br>*required*|scheduler cluster id|string|
+|**Path**|**id**  <br>*必填*|id|string|
+|**Path**|**scheduler_cluster_id**  <br>*必填*|scheduler cluster id|string|
 
 
-#### Responses
+#### 响应
 
-|HTTP Code|Schema|
+|HTTP代码|类型|
 |---|---|
-|**200**|No Content|
-|**400**|No Content|
-|**404**|No Content|
-|**500**|No Content|
+|**200**|无内容|
+|**400**|无内容|
+|**404**|无内容|
+|**500**|无内容|
 
 
-#### Consumes
-
-* `application/json`
-
-
-#### Produces
+#### 消耗
 
 * `application/json`
 
 
-#### Tags
+#### 生成
+
+* `application/json`
+
+
+#### 标签
 
 * Application
 
@@ -337,39 +337,39 @@ PUT /api/v1/applications/{id}/seed-peer-clusters/{seed_peer_cluster_id}
 ```
 
 
-#### Description
+#### 说明
 Add SeedPeer to Application
 
 
-#### Parameters
+#### 参数
 
-|Type|Name|Description|Schema|
+|类型|名称|说明|类型|
 |---|---|---|---|
-|**Path**|**id**  <br>*required*|id|string|
-|**Path**|**seed_peer_cluster_id**  <br>*required*|seed peer cluster id|string|
+|**Path**|**id**  <br>*必填*|id|string|
+|**Path**|**seed_peer_cluster_id**  <br>*必填*|seed peer cluster id|string|
 
 
-#### Responses
+#### 响应
 
-|HTTP Code|Schema|
+|HTTP代码|类型|
 |---|---|
-|**200**|No Content|
-|**400**|No Content|
-|**404**|No Content|
-|**500**|No Content|
+|**200**|无内容|
+|**400**|无内容|
+|**404**|无内容|
+|**500**|无内容|
 
 
-#### Consumes
-
-* `application/json`
-
-
-#### Produces
+#### 消耗
 
 * `application/json`
 
 
-#### Tags
+#### 生成
+
+* `application/json`
+
+
+#### 标签
 
 * Application
 
@@ -381,39 +381,39 @@ DELETE /api/v1/applications/{id}/seed-peer-clusters/{seed_peer_cluster_id}
 ```
 
 
-#### Description
+#### 说明
 Delete SeedPeer to Application
 
 
-#### Parameters
+#### 参数
 
-|Type|Name|Description|Schema|
+|类型|名称|说明|类型|
 |---|---|---|---|
-|**Path**|**id**  <br>*required*|id|string|
-|**Path**|**seed_peer_cluster_id**  <br>*required*|seed peer cluster id|string|
+|**Path**|**id**  <br>*必填*|id|string|
+|**Path**|**seed_peer_cluster_id**  <br>*必填*|seed peer cluster id|string|
 
 
-#### Responses
+#### 响应
 
-|HTTP Code|Schema|
+|HTTP代码|类型|
 |---|---|
-|**200**|No Content|
-|**400**|No Content|
-|**404**|No Content|
-|**500**|No Content|
+|**200**|无内容|
+|**400**|无内容|
+|**404**|无内容|
+|**500**|无内容|
 
 
-#### Consumes
-
-* `application/json`
-
-
-#### Produces
+#### 消耗
 
 * `application/json`
 
 
-#### Tags
+#### 生成
+
+* `application/json`
+
+
+#### 标签
 
 * Application
 
@@ -425,38 +425,38 @@ POST /api/v1/configs
 ```
 
 
-#### Description
+#### 说明
 create by json config
 
 
-#### Parameters
+#### 参数
 
-|Type|Name|Description|Schema|
+|类型|名称|说明|类型|
 |---|---|---|---|
-|**Body**|**Config**  <br>*required*|Config|[types.CreateConfigRequest](#types-createconfigrequest)|
+|**Body**|**Config**  <br>*必填*|Config|[types.CreateConfigRequest](#types-createconfigrequest)|
 
 
-#### Responses
+#### 响应
 
-|HTTP Code|Description|Schema|
+|HTTP代码|说明|类型|
 |---|---|---|
 |**200**|OK|[model.Config](#model-config)|
-|**400**||No Content|
-|**404**||No Content|
-|**500**||No Content|
+|**400**||无内容|
+|**404**||无内容|
+|**500**||无内容|
 
 
-#### Consumes
-
-* `application/json`
-
-
-#### Produces
+#### 消耗
 
 * `application/json`
 
 
-#### Tags
+#### 生成
+
+* `application/json`
+
+
+#### 标签
 
 * Config
 
@@ -468,39 +468,39 @@ GET /api/v1/configs
 ```
 
 
-#### Description
+#### 说明
 Get Configs
 
 
-#### Parameters
+#### 参数
 
-|Type|Name|Description|Schema|Default|
+|类型|名称|说明|类型|默认值|
 |---|---|---|---|---|
-|**Query**|**page**  <br>*required*|current page|integer|`0`|
-|**Query**|**per_page**  <br>*required*|return max item count, default 10, max 50|integer|`10`|
+|**Query**|**page**  <br>*必填*|current page|integer|`0`|
+|**Query**|**per_page**  <br>*必填*|return max item count, default 10, max 50|integer|`10`|
 
 
-#### Responses
+#### 响应
 
-|HTTP Code|Description|Schema|
+|HTTP代码|说明|类型|
 |---|---|---|
 |**200**|OK|< [model.Config](#model-config) > array|
-|**400**||No Content|
-|**404**||No Content|
-|**500**||No Content|
+|**400**||无内容|
+|**404**||无内容|
+|**500**||无内容|
 
 
-#### Consumes
-
-* `application/json`
-
-
-#### Produces
+#### 消耗
 
 * `application/json`
 
 
-#### Tags
+#### 生成
+
+* `application/json`
+
+
+#### 标签
 
 * Config
 
@@ -512,38 +512,38 @@ GET /api/v1/configs/{id}
 ```
 
 
-#### Description
+#### 说明
 Get Config by id
 
 
-#### Parameters
+#### 参数
 
-|Type|Name|Description|Schema|
+|类型|名称|说明|类型|
 |---|---|---|---|
-|**Path**|**id**  <br>*required*|id|string|
+|**Path**|**id**  <br>*必填*|id|string|
 
 
-#### Responses
+#### 响应
 
-|HTTP Code|Description|Schema|
+|HTTP代码|说明|类型|
 |---|---|---|
 |**200**|OK|[model.Config](#model-config)|
-|**400**||No Content|
-|**404**||No Content|
-|**500**||No Content|
+|**400**||无内容|
+|**404**||无内容|
+|**500**||无内容|
 
 
-#### Consumes
-
-* `application/json`
-
-
-#### Produces
+#### 消耗
 
 * `application/json`
 
 
-#### Tags
+#### 生成
+
+* `application/json`
+
+
+#### 标签
 
 * Config
 
@@ -555,38 +555,38 @@ DELETE /api/v1/configs/{id}
 ```
 
 
-#### Description
+#### 说明
 Destroy by id
 
 
-#### Parameters
+#### 参数
 
-|Type|Name|Description|Schema|
+|类型|名称|说明|类型|
 |---|---|---|---|
-|**Path**|**id**  <br>*required*|id|string|
+|**Path**|**id**  <br>*必填*|id|string|
 
 
-#### Responses
+#### 响应
 
-|HTTP Code|Schema|
+|HTTP代码|类型|
 |---|---|
-|**200**|No Content|
-|**400**|No Content|
-|**404**|No Content|
-|**500**|No Content|
+|**200**|无内容|
+|**400**|无内容|
+|**404**|无内容|
+|**500**|无内容|
 
 
-#### Consumes
-
-* `application/json`
-
-
-#### Produces
+#### 消耗
 
 * `application/json`
 
 
-#### Tags
+#### 生成
+
+* `application/json`
+
+
+#### 标签
 
 * Config
 
@@ -598,39 +598,39 @@ PATCH /api/v1/configs/{id}
 ```
 
 
-#### Description
+#### 说明
 Update by json config
 
 
-#### Parameters
+#### 参数
 
-|Type|Name|Description|Schema|
+|类型|名称|说明|类型|
 |---|---|---|---|
-|**Path**|**id**  <br>*required*|id|string|
-|**Body**|**Config**  <br>*required*|Config|[types.UpdateConfigRequest](#types-updateconfigrequest)|
+|**Path**|**id**  <br>*必填*|id|string|
+|**Body**|**Config**  <br>*必填*|Config|[types.UpdateConfigRequest](#types-updateconfigrequest)|
 
 
-#### Responses
+#### 响应
 
-|HTTP Code|Description|Schema|
+|HTTP代码|说明|类型|
 |---|---|---|
 |**200**|OK|[model.Config](#model-config)|
-|**400**||No Content|
-|**404**||No Content|
-|**500**||No Content|
+|**400**||无内容|
+|**404**||无内容|
+|**500**||无内容|
 
 
-#### Consumes
-
-* `application/json`
-
-
-#### Produces
+#### 消耗
 
 * `application/json`
 
 
-#### Tags
+#### 生成
+
+* `application/json`
+
+
+#### 标签
 
 * Config
 
@@ -642,31 +642,31 @@ GET /api/v1/healthy
 ```
 
 
-#### Description
+#### 说明
 Get app health
 
 
-#### Responses
+#### 响应
 
-|HTTP Code|Schema|
+|HTTP代码|类型|
 |---|---|
-|**200**|No Content|
-|**400**|No Content|
-|**404**|No Content|
-|**500**|No Content|
+|**200**|无内容|
+|**400**|无内容|
+|**404**|无内容|
+|**500**|无内容|
 
 
-#### Consumes
-
-* `application/json`
-
-
-#### Produces
+#### 消耗
 
 * `application/json`
 
 
-#### Tags
+#### 生成
+
+* `application/json`
+
+
+#### 标签
 
 * Health
 
@@ -678,38 +678,38 @@ POST /api/v1/jobs
 ```
 
 
-#### Description
+#### 说明
 create by json config
 
 
-#### Parameters
+#### 参数
 
-|Type|Name|Description|Schema|
+|类型|名称|说明|类型|
 |---|---|---|---|
-|**Body**|**Job**  <br>*required*|Job|[types.CreateJobRequest](#types-createjobrequest)|
+|**Body**|**Job**  <br>*必填*|Job|[types.CreateJobRequest](#types-createjobrequest)|
 
 
-#### Responses
+#### 响应
 
-|HTTP Code|Description|Schema|
+|HTTP代码|说明|类型|
 |---|---|---|
 |**200**|OK|[model.Job](#model-job)|
-|**400**||No Content|
-|**404**||No Content|
-|**500**||No Content|
+|**400**||无内容|
+|**404**||无内容|
+|**500**||无内容|
 
 
-#### Consumes
-
-* `application/json`
-
-
-#### Produces
+#### 消耗
 
 * `application/json`
 
 
-#### Tags
+#### 生成
+
+* `application/json`
+
+
+#### 标签
 
 * Job
 
@@ -721,39 +721,39 @@ GET /api/v1/jobs
 ```
 
 
-#### Description
+#### 说明
 Get Jobs
 
 
-#### Parameters
+#### 参数
 
-|Type|Name|Description|Schema|Default|
+|类型|名称|说明|类型|默认值|
 |---|---|---|---|---|
-|**Query**|**page**  <br>*required*|current page|integer|`0`|
-|**Query**|**per_page**  <br>*required*|return max item count, default 10, max 50|integer|`10`|
+|**Query**|**page**  <br>*必填*|current page|integer|`0`|
+|**Query**|**per_page**  <br>*必填*|return max item count, default 10, max 50|integer|`10`|
 
 
-#### Responses
+#### 响应
 
-|HTTP Code|Description|Schema|
+|HTTP代码|说明|类型|
 |---|---|---|
 |**200**|OK|< [model.Job](#model-job) > array|
-|**400**||No Content|
-|**404**||No Content|
-|**500**||No Content|
+|**400**||无内容|
+|**404**||无内容|
+|**500**||无内容|
 
 
-#### Consumes
-
-* `application/json`
-
-
-#### Produces
+#### 消耗
 
 * `application/json`
 
 
-#### Tags
+#### 生成
+
+* `application/json`
+
+
+#### 标签
 
 * Job
 
@@ -765,38 +765,38 @@ GET /api/v1/jobs/{id}
 ```
 
 
-#### Description
+#### 说明
 Get Job by id
 
 
-#### Parameters
+#### 参数
 
-|Type|Name|Description|Schema|
+|类型|名称|说明|类型|
 |---|---|---|---|
-|**Path**|**id**  <br>*required*|id|string|
+|**Path**|**id**  <br>*必填*|id|string|
 
 
-#### Responses
+#### 响应
 
-|HTTP Code|Description|Schema|
+|HTTP代码|说明|类型|
 |---|---|---|
 |**200**|OK|[model.Job](#model-job)|
-|**400**||No Content|
-|**404**||No Content|
-|**500**||No Content|
+|**400**||无内容|
+|**404**||无内容|
+|**500**||无内容|
 
 
-#### Consumes
-
-* `application/json`
-
-
-#### Produces
+#### 消耗
 
 * `application/json`
 
 
-#### Tags
+#### 生成
+
+* `application/json`
+
+
+#### 标签
 
 * Job
 
@@ -808,38 +808,38 @@ DELETE /api/v1/jobs/{id}
 ```
 
 
-#### Description
+#### 说明
 Destroy by id
 
 
-#### Parameters
+#### 参数
 
-|Type|Name|Description|Schema|
+|类型|名称|说明|类型|
 |---|---|---|---|
-|**Path**|**id**  <br>*required*|id|string|
+|**Path**|**id**  <br>*必填*|id|string|
 
 
-#### Responses
+#### 响应
 
-|HTTP Code|Schema|
+|HTTP代码|类型|
 |---|---|
-|**200**|No Content|
-|**400**|No Content|
-|**404**|No Content|
-|**500**|No Content|
+|**200**|无内容|
+|**400**|无内容|
+|**404**|无内容|
+|**500**|无内容|
 
 
-#### Consumes
-
-* `application/json`
-
-
-#### Produces
+#### 消耗
 
 * `application/json`
 
 
-#### Tags
+#### 生成
+
+* `application/json`
+
+
+#### 标签
 
 * Job
 
@@ -851,39 +851,39 @@ PATCH /api/v1/jobs/{id}
 ```
 
 
-#### Description
+#### 说明
 Update by json config
 
 
-#### Parameters
+#### 参数
 
-|Type|Name|Description|Schema|
+|类型|名称|说明|类型|
 |---|---|---|---|
-|**Path**|**id**  <br>*required*|id|string|
-|**Body**|**Job**  <br>*required*|Job|[types.UpdateJobRequest](#types-updatejobrequest)|
+|**Path**|**id**  <br>*必填*|id|string|
+|**Body**|**Job**  <br>*必填*|Job|[types.UpdateJobRequest](#types-updatejobrequest)|
 
 
-#### Responses
+#### 响应
 
-|HTTP Code|Description|Schema|
+|HTTP代码|说明|类型|
 |---|---|---|
 |**200**|OK|[model.Job](#model-job)|
-|**400**||No Content|
-|**404**||No Content|
-|**500**||No Content|
+|**400**||无内容|
+|**404**||无内容|
+|**500**||无内容|
 
 
-#### Consumes
-
-* `application/json`
-
-
-#### Produces
+#### 消耗
 
 * `application/json`
 
 
-#### Tags
+#### 生成
+
+* `application/json`
+
+
+#### 标签
 
 * Job
 
@@ -895,38 +895,38 @@ POST /api/v1/oauth
 ```
 
 
-#### Description
+#### 说明
 create by json config
 
 
-#### Parameters
+#### 参数
 
-|Type|Name|Description|Schema|
+|类型|名称|说明|类型|
 |---|---|---|---|
-|**Body**|**Oauth**  <br>*required*|Oauth|[types.CreateOauthRequest](#types-createoauthrequest)|
+|**Body**|**Oauth**  <br>*必填*|Oauth|[types.CreateOauthRequest](#types-createoauthrequest)|
 
 
-#### Responses
+#### 响应
 
-|HTTP Code|Description|Schema|
+|HTTP代码|说明|类型|
 |---|---|---|
 |**200**|OK|[model.Oauth](#model-oauth)|
-|**400**||No Content|
-|**404**||No Content|
-|**500**||No Content|
+|**400**||无内容|
+|**404**||无内容|
+|**500**||无内容|
 
 
-#### Consumes
-
-* `application/json`
-
-
-#### Produces
+#### 消耗
 
 * `application/json`
 
 
-#### Tags
+#### 生成
+
+* `application/json`
+
+
+#### 标签
 
 * Oauth
 
@@ -938,39 +938,39 @@ GET /api/v1/oauth
 ```
 
 
-#### Description
+#### 说明
 Get Oauths
 
 
-#### Parameters
+#### 参数
 
-|Type|Name|Description|Schema|Default|
+|类型|名称|说明|类型|默认值|
 |---|---|---|---|---|
-|**Query**|**page**  <br>*required*|current page|integer|`0`|
-|**Query**|**per_page**  <br>*required*|return max item count, default 10, max 50|integer|`10`|
+|**Query**|**page**  <br>*必填*|current page|integer|`0`|
+|**Query**|**per_page**  <br>*必填*|return max item count, default 10, max 50|integer|`10`|
 
 
-#### Responses
+#### 响应
 
-|HTTP Code|Description|Schema|
+|HTTP代码|说明|类型|
 |---|---|---|
 |**200**|OK|< [model.Oauth](#model-oauth) > array|
-|**400**||No Content|
-|**404**||No Content|
-|**500**||No Content|
+|**400**||无内容|
+|**404**||无内容|
+|**500**||无内容|
 
 
-#### Consumes
-
-* `application/json`
-
-
-#### Produces
+#### 消耗
 
 * `application/json`
 
 
-#### Tags
+#### 生成
+
+* `application/json`
+
+
+#### 标签
 
 * Oauth
 
@@ -982,38 +982,38 @@ GET /api/v1/oauth/{id}
 ```
 
 
-#### Description
+#### 说明
 Get Oauth by id
 
 
-#### Parameters
+#### 参数
 
-|Type|Name|Description|Schema|
+|类型|名称|说明|类型|
 |---|---|---|---|
-|**Path**|**id**  <br>*required*|id|string|
+|**Path**|**id**  <br>*必填*|id|string|
 
 
-#### Responses
+#### 响应
 
-|HTTP Code|Description|Schema|
+|HTTP代码|说明|类型|
 |---|---|---|
 |**200**|OK|[model.Oauth](#model-oauth)|
-|**400**||No Content|
-|**404**||No Content|
-|**500**||No Content|
+|**400**||无内容|
+|**404**||无内容|
+|**500**||无内容|
 
 
-#### Consumes
-
-* `application/json`
-
-
-#### Produces
+#### 消耗
 
 * `application/json`
 
 
-#### Tags
+#### 生成
+
+* `application/json`
+
+
+#### 标签
 
 * Oauth
 
@@ -1025,38 +1025,38 @@ DELETE /api/v1/oauth/{id}
 ```
 
 
-#### Description
+#### 说明
 Destroy by id
 
 
-#### Parameters
+#### 参数
 
-|Type|Name|Description|Schema|
+|类型|名称|说明|类型|
 |---|---|---|---|
-|**Path**|**id**  <br>*required*|id|string|
+|**Path**|**id**  <br>*必填*|id|string|
 
 
-#### Responses
+#### 响应
 
-|HTTP Code|Schema|
+|HTTP代码|类型|
 |---|---|
-|**200**|No Content|
-|**400**|No Content|
-|**404**|No Content|
-|**500**|No Content|
+|**200**|无内容|
+|**400**|无内容|
+|**404**|无内容|
+|**500**|无内容|
 
 
-#### Consumes
-
-* `application/json`
-
-
-#### Produces
+#### 消耗
 
 * `application/json`
 
 
-#### Tags
+#### 生成
+
+* `application/json`
+
+
+#### 标签
 
 * Oauth
 
@@ -1068,41 +1068,77 @@ PATCH /api/v1/oauth/{id}
 ```
 
 
-#### Description
+#### 说明
 Update by json config
 
 
-#### Parameters
+#### 参数
 
-|Type|Name|Description|Schema|
+|类型|名称|说明|类型|
 |---|---|---|---|
-|**Path**|**id**  <br>*required*|id|string|
-|**Body**|**Oauth**  <br>*required*|Oauth|[types.UpdateOauthRequest](#types-updateoauthrequest)|
+|**Path**|**id**  <br>*必填*|id|string|
+|**Body**|**Oauth**  <br>*必填*|Oauth|[types.UpdateOauthRequest](#types-updateoauthrequest)|
 
 
-#### Responses
+#### 响应
 
-|HTTP Code|Description|Schema|
+|HTTP代码|说明|类型|
 |---|---|---|
 |**200**|OK|[model.Oauth](#model-oauth)|
-|**400**||No Content|
-|**404**||No Content|
-|**500**||No Content|
+|**400**||无内容|
+|**404**||无内容|
+|**500**||无内容|
 
 
-#### Consumes
-
-* `application/json`
-
-
-#### Produces
+#### 消耗
 
 * `application/json`
 
 
-#### Tags
+#### 生成
+
+* `application/json`
+
+
+#### 标签
 
 * Oauth
+
+
+<a name="api-v1-peers-get"></a>
+### Get Peers
+```
+GET /api/v1/peers
+```
+
+
+#### 说明
+Get Peers
+
+
+#### 响应
+
+|HTTP代码|说明|类型|
+|---|---|---|
+|**200**|OK|< string > array|
+|**400**||无内容|
+|**404**||无内容|
+|**500**||无内容|
+
+
+#### 消耗
+
+* `application/json`
+
+
+#### 生成
+
+* `application/json`
+
+
+#### 标签
+
+* Peer
 
 
 <a name="api-v1-permissions-get"></a>
@@ -1112,25 +1148,25 @@ GET /api/v1/permissions
 ```
 
 
-#### Description
+#### 说明
 Get Permissions
 
 
-#### Responses
+#### 响应
 
-|HTTP Code|Description|Schema|
+|HTTP代码|说明|类型|
 |---|---|---|
 |**200**|OK|< [rbac.Permission](#rbac-permission) > array|
-|**400**||No Content|
-|**500**||No Content|
+|**400**||无内容|
+|**500**||无内容|
 
 
-#### Produces
+#### 生成
 
 * `application/json`
 
 
-#### Tags
+#### 标签
 
 * Permission
 
@@ -1142,38 +1178,38 @@ POST /api/v1/preheats
 ```
 
 
-#### Description
+#### 说明
 create by json config
 
 
-#### Parameters
+#### 参数
 
-|Type|Name|Description|Schema|
+|类型|名称|说明|类型|
 |---|---|---|---|
-|**Body**|**Preheat**  <br>*required*|Preheat|[types.CreateV1PreheatRequest](#types-createv1preheatrequest)|
+|**Body**|**Preheat**  <br>*必填*|Preheat|[types.CreateV1PreheatRequest](#types-createv1preheatrequest)|
 
 
-#### Responses
+#### 响应
 
-|HTTP Code|Description|Schema|
+|HTTP代码|说明|类型|
 |---|---|---|
 |**200**|OK|[types.CreateV1PreheatResponse](#types-createv1preheatresponse)|
-|**400**||No Content|
-|**404**||No Content|
-|**500**||No Content|
+|**400**||无内容|
+|**404**||无内容|
+|**500**||无内容|
 
 
-#### Consumes
-
-* `application/json`
-
-
-#### Produces
+#### 消耗
 
 * `application/json`
 
 
-#### Tags
+#### 生成
+
+* `application/json`
+
+
+#### 标签
 
 * Preheat
 
@@ -1185,38 +1221,38 @@ GET /api/v1/preheats/{id}
 ```
 
 
-#### Description
+#### 说明
 Get Preheat by id
 
 
-#### Parameters
+#### 参数
 
-|Type|Name|Description|Schema|
+|类型|名称|说明|类型|
 |---|---|---|---|
-|**Path**|**id**  <br>*required*|id|string|
+|**Path**|**id**  <br>*必填*|id|string|
 
 
-#### Responses
+#### 响应
 
-|HTTP Code|Description|Schema|
+|HTTP代码|说明|类型|
 |---|---|---|
 |**200**|OK|[types.GetV1PreheatResponse](#types-getv1preheatresponse)|
-|**400**||No Content|
-|**404**||No Content|
-|**500**||No Content|
+|**400**||无内容|
+|**404**||无内容|
+|**500**||无内容|
 
 
-#### Consumes
-
-* `application/json`
-
-
-#### Produces
+#### 消耗
 
 * `application/json`
 
 
-#### Tags
+#### 生成
+
+* `application/json`
+
+
+#### 标签
 
 * Preheat
 
@@ -1228,37 +1264,37 @@ POST /api/v1/roles
 ```
 
 
-#### Description
+#### 说明
 Create Role by json config
 
 
-#### Parameters
+#### 参数
 
-|Type|Name|Description|Schema|
+|类型|名称|说明|类型|
 |---|---|---|---|
-|**Body**|**Role**  <br>*required*|Role|[types.CreateRoleRequest](#types-createrolerequest)|
+|**Body**|**Role**  <br>*必填*|Role|[types.CreateRoleRequest](#types-createrolerequest)|
 
 
-#### Responses
+#### 响应
 
-|HTTP Code|Schema|
+|HTTP代码|类型|
 |---|---|
-|**200**|No Content|
-|**400**|No Content|
-|**500**|No Content|
+|**200**|无内容|
+|**400**|无内容|
+|**500**|无内容|
 
 
-#### Consumes
-
-* `application/json`
-
-
-#### Produces
+#### 消耗
 
 * `application/json`
 
 
-#### Tags
+#### 生成
+
+* `application/json`
+
+
+#### 标签
 
 * Role
 
@@ -1270,30 +1306,30 @@ GET /api/v1/roles
 ```
 
 
-#### Description
+#### 说明
 Get roles
 
 
-#### Responses
+#### 响应
 
-|HTTP Code|Schema|
+|HTTP代码|类型|
 |---|---|
-|**200**|No Content|
-|**400**|No Content|
-|**500**|No Content|
+|**200**|无内容|
+|**400**|无内容|
+|**500**|无内容|
 
 
-#### Consumes
-
-* `application/json`
-
-
-#### Produces
+#### 消耗
 
 * `application/json`
 
 
-#### Tags
+#### 生成
+
+* `application/json`
+
+
+#### 标签
 
 * Role
 
@@ -1305,37 +1341,37 @@ GET /api/v1/roles/:role
 ```
 
 
-#### Description
+#### 说明
 Get Role
 
 
-#### Parameters
+#### 参数
 
-|Type|Name|Description|Schema|
+|类型|名称|说明|类型|
 |---|---|---|---|
-|**Path**|**role**  <br>*required*|role|string|
+|**Path**|**role**  <br>*必填*|role|string|
 
 
-#### Responses
+#### 响应
 
-|HTTP Code|Schema|
+|HTTP代码|类型|
 |---|---|
-|**200**|No Content|
-|**400**|No Content|
-|**500**|No Content|
+|**200**|无内容|
+|**400**|无内容|
+|**500**|无内容|
 
 
-#### Consumes
-
-* `application/json`
-
-
-#### Produces
+#### 消耗
 
 * `application/json`
 
 
-#### Tags
+#### 生成
+
+* `application/json`
+
+
+#### 标签
 
 * Role
 
@@ -1347,37 +1383,37 @@ DELETE /api/v1/roles/:role
 ```
 
 
-#### Description
+#### 说明
 Destroy role by json config
 
 
-#### Parameters
+#### 参数
 
-|Type|Name|Description|Schema|
+|类型|名称|说明|类型|
 |---|---|---|---|
-|**Path**|**role**  <br>*required*|role|string|
+|**Path**|**role**  <br>*必填*|role|string|
 
 
-#### Responses
+#### 响应
 
-|HTTP Code|Schema|
+|HTTP代码|类型|
 |---|---|
-|**200**|No Content|
-|**400**|No Content|
-|**500**|No Content|
+|**200**|无内容|
+|**400**|无内容|
+|**500**|无内容|
 
 
-#### Consumes
-
-* `application/json`
-
-
-#### Produces
+#### 消耗
 
 * `application/json`
 
 
-#### Tags
+#### 生成
+
+* `application/json`
+
+
+#### 标签
 
 * Role
 
@@ -1389,38 +1425,38 @@ POST /api/v1/roles/:role/permissions
 ```
 
 
-#### Description
+#### 说明
 Add Permission by json config
 
 
-#### Parameters
+#### 参数
 
-|Type|Name|Description|Schema|
+|类型|名称|说明|类型|
 |---|---|---|---|
-|**Path**|**role**  <br>*required*|role|string|
-|**Body**|**Permission**  <br>*required*|Permission|[types.AddPermissionForRoleRequest](#types-addpermissionforrolerequest)|
+|**Path**|**role**  <br>*必填*|role|string|
+|**Body**|**Permission**  <br>*必填*|Permission|[types.AddPermissionForRoleRequest](#types-addpermissionforrolerequest)|
 
 
-#### Responses
+#### 响应
 
-|HTTP Code|Schema|
+|HTTP代码|类型|
 |---|---|
-|**200**|No Content|
-|**400**|No Content|
-|**500**|No Content|
+|**200**|无内容|
+|**400**|无内容|
+|**500**|无内容|
 
 
-#### Consumes
-
-* `application/json`
-
-
-#### Produces
+#### 消耗
 
 * `application/json`
 
 
-#### Tags
+#### 生成
+
+* `application/json`
+
+
+#### 标签
 
 * Role
 
@@ -1432,38 +1468,38 @@ DELETE /api/v1/roles/:role/permissions
 ```
 
 
-#### Description
+#### 说明
 Remove Role Permission by json config
 
 
-#### Parameters
+#### 参数
 
-|Type|Name|Description|Schema|
+|类型|名称|说明|类型|
 |---|---|---|---|
-|**Path**|**role**  <br>*required*|role|string|
-|**Body**|**Permission**  <br>*required*|Permission|[types.DeletePermissionForRoleRequest](#types-deletepermissionforrolerequest)|
+|**Path**|**role**  <br>*必填*|role|string|
+|**Body**|**Permission**  <br>*必填*|Permission|[types.DeletePermissionForRoleRequest](#types-deletepermissionforrolerequest)|
 
 
-#### Responses
+#### 响应
 
-|HTTP Code|Schema|
+|HTTP代码|类型|
 |---|---|
-|**200**|No Content|
-|**400**|No Content|
-|**500**|No Content|
+|**200**|无内容|
+|**400**|无内容|
+|**500**|无内容|
 
 
-#### Consumes
-
-* `application/json`
-
-
-#### Produces
+#### 消耗
 
 * `application/json`
 
 
-#### Tags
+#### 生成
+
+* `application/json`
+
+
+#### 标签
 
 * Role
 
@@ -1475,38 +1511,38 @@ POST /api/v1/scheduler-clusters
 ```
 
 
-#### Description
+#### 说明
 create by json config
 
 
-#### Parameters
+#### 参数
 
-|Type|Name|Description|Schema|
+|类型|名称|说明|类型|
 |---|---|---|---|
-|**Body**|**SchedulerCluster**  <br>*required*|SchedulerCluster|[types.CreateSchedulerClusterRequest](#types-createschedulerclusterrequest)|
+|**Body**|**SchedulerCluster**  <br>*必填*|SchedulerCluster|[types.CreateSchedulerClusterRequest](#types-createschedulerclusterrequest)|
 
 
-#### Responses
+#### 响应
 
-|HTTP Code|Description|Schema|
+|HTTP代码|说明|类型|
 |---|---|---|
 |**200**|OK|[model.SchedulerCluster](#model-schedulercluster)|
-|**400**||No Content|
-|**404**||No Content|
-|**500**||No Content|
+|**400**||无内容|
+|**404**||无内容|
+|**500**||无内容|
 
 
-#### Consumes
-
-* `application/json`
-
-
-#### Produces
+#### 消耗
 
 * `application/json`
 
 
-#### Tags
+#### 生成
+
+* `application/json`
+
+
+#### 标签
 
 * SchedulerCluster
 
@@ -1518,39 +1554,39 @@ GET /api/v1/scheduler-clusters
 ```
 
 
-#### Description
+#### 说明
 Get SchedulerClusters
 
 
-#### Parameters
+#### 参数
 
-|Type|Name|Description|Schema|Default|
+|类型|名称|说明|类型|默认值|
 |---|---|---|---|---|
-|**Query**|**page**  <br>*required*|current page|integer|`0`|
-|**Query**|**per_page**  <br>*required*|return max item count, default 10, max 50|integer|`10`|
+|**Query**|**page**  <br>*必填*|current page|integer|`0`|
+|**Query**|**per_page**  <br>*必填*|return max item count, default 10, max 50|integer|`10`|
 
 
-#### Responses
+#### 响应
 
-|HTTP Code|Description|Schema|
+|HTTP代码|说明|类型|
 |---|---|---|
 |**200**|OK|< [model.SchedulerCluster](#model-schedulercluster) > array|
-|**400**||No Content|
-|**404**||No Content|
-|**500**||No Content|
+|**400**||无内容|
+|**404**||无内容|
+|**500**||无内容|
 
 
-#### Consumes
-
-* `application/json`
-
-
-#### Produces
+#### 消耗
 
 * `application/json`
 
 
-#### Tags
+#### 生成
+
+* `application/json`
+
+
+#### 标签
 
 * SchedulerCluster
 
@@ -1562,38 +1598,38 @@ GET /api/v1/scheduler-clusters/{id}
 ```
 
 
-#### Description
+#### 说明
 Get SchedulerCluster by id
 
 
-#### Parameters
+#### 参数
 
-|Type|Name|Description|Schema|
+|类型|名称|说明|类型|
 |---|---|---|---|
-|**Path**|**id**  <br>*required*|id|string|
+|**Path**|**id**  <br>*必填*|id|string|
 
 
-#### Responses
+#### 响应
 
-|HTTP Code|Description|Schema|
+|HTTP代码|说明|类型|
 |---|---|---|
 |**200**|OK|[model.SchedulerCluster](#model-schedulercluster)|
-|**400**||No Content|
-|**404**||No Content|
-|**500**||No Content|
+|**400**||无内容|
+|**404**||无内容|
+|**500**||无内容|
 
 
-#### Consumes
-
-* `application/json`
-
-
-#### Produces
+#### 消耗
 
 * `application/json`
 
 
-#### Tags
+#### 生成
+
+* `application/json`
+
+
+#### 标签
 
 * SchedulerCluster
 
@@ -1605,38 +1641,38 @@ DELETE /api/v1/scheduler-clusters/{id}
 ```
 
 
-#### Description
+#### 说明
 Destroy by id
 
 
-#### Parameters
+#### 参数
 
-|Type|Name|Description|Schema|
+|类型|名称|说明|类型|
 |---|---|---|---|
-|**Path**|**id**  <br>*required*|id|string|
+|**Path**|**id**  <br>*必填*|id|string|
 
 
-#### Responses
+#### 响应
 
-|HTTP Code|Schema|
+|HTTP代码|类型|
 |---|---|
-|**200**|No Content|
-|**400**|No Content|
-|**404**|No Content|
-|**500**|No Content|
+|**200**|无内容|
+|**400**|无内容|
+|**404**|无内容|
+|**500**|无内容|
 
 
-#### Consumes
-
-* `application/json`
-
-
-#### Produces
+#### 消耗
 
 * `application/json`
 
 
-#### Tags
+#### 生成
+
+* `application/json`
+
+
+#### 标签
 
 * SchedulerCluster
 
@@ -1648,39 +1684,39 @@ PATCH /api/v1/scheduler-clusters/{id}
 ```
 
 
-#### Description
+#### 说明
 Update by json config
 
 
-#### Parameters
+#### 参数
 
-|Type|Name|Description|Schema|
+|类型|名称|说明|类型|
 |---|---|---|---|
-|**Path**|**id**  <br>*required*|id|string|
-|**Body**|**SchedulerCluster**  <br>*required*|SchedulerCluster|[types.UpdateSchedulerClusterRequest](#types-updateschedulerclusterrequest)|
+|**Path**|**id**  <br>*必填*|id|string|
+|**Body**|**SchedulerCluster**  <br>*必填*|SchedulerCluster|[types.UpdateSchedulerClusterRequest](#types-updateschedulerclusterrequest)|
 
 
-#### Responses
+#### 响应
 
-|HTTP Code|Description|Schema|
+|HTTP代码|说明|类型|
 |---|---|---|
 |**200**|OK|[model.SchedulerCluster](#model-schedulercluster)|
-|**400**||No Content|
-|**404**||No Content|
-|**500**||No Content|
+|**400**||无内容|
+|**404**||无内容|
+|**500**||无内容|
 
 
-#### Consumes
-
-* `application/json`
-
-
-#### Produces
+#### 消耗
 
 * `application/json`
 
 
-#### Tags
+#### 生成
+
+* `application/json`
+
+
+#### 标签
 
 * SchedulerCluster
 
@@ -1692,39 +1728,39 @@ PUT /api/v1/scheduler-clusters/{id}/schedulers/{scheduler_id}
 ```
 
 
-#### Description
+#### 说明
 Add Scheduler to schedulerCluster
 
 
-#### Parameters
+#### 参数
 
-|Type|Name|Description|Schema|
+|类型|名称|说明|类型|
 |---|---|---|---|
-|**Path**|**id**  <br>*required*|id|string|
-|**Path**|**scheduler_id**  <br>*required*|scheduler id|string|
+|**Path**|**id**  <br>*必填*|id|string|
+|**Path**|**scheduler_id**  <br>*必填*|scheduler id|string|
 
 
-#### Responses
+#### 响应
 
-|HTTP Code|Schema|
+|HTTP代码|类型|
 |---|---|
-|**200**|No Content|
-|**400**|No Content|
-|**404**|No Content|
-|**500**|No Content|
+|**200**|无内容|
+|**400**|无内容|
+|**404**|无内容|
+|**500**|无内容|
 
 
-#### Consumes
-
-* `application/json`
-
-
-#### Produces
+#### 消耗
 
 * `application/json`
 
 
-#### Tags
+#### 生成
+
+* `application/json`
+
+
+#### 标签
 
 * SchedulerCluster
 
@@ -1736,38 +1772,38 @@ POST /api/v1/schedulers
 ```
 
 
-#### Description
+#### 说明
 create by json config
 
 
-#### Parameters
+#### 参数
 
-|Type|Name|Description|Schema|
+|类型|名称|说明|类型|
 |---|---|---|---|
-|**Body**|**Scheduler**  <br>*required*|Scheduler|[types.CreateSchedulerRequest](#types-createschedulerrequest)|
+|**Body**|**Scheduler**  <br>*必填*|Scheduler|[types.CreateSchedulerRequest](#types-createschedulerrequest)|
 
 
-#### Responses
+#### 响应
 
-|HTTP Code|Description|Schema|
+|HTTP代码|说明|类型|
 |---|---|---|
 |**200**|OK|[model.Scheduler](#model-scheduler)|
-|**400**||No Content|
-|**404**||No Content|
-|**500**||No Content|
+|**400**||无内容|
+|**404**||无内容|
+|**500**||无内容|
 
 
-#### Consumes
-
-* `application/json`
-
-
-#### Produces
+#### 消耗
 
 * `application/json`
 
 
-#### Tags
+#### 生成
+
+* `application/json`
+
+
+#### 标签
 
 * Scheduler
 
@@ -1779,39 +1815,39 @@ GET /api/v1/schedulers
 ```
 
 
-#### Description
+#### 说明
 Get Schedulers
 
 
-#### Parameters
+#### 参数
 
-|Type|Name|Description|Schema|Default|
+|类型|名称|说明|类型|默认值|
 |---|---|---|---|---|
-|**Query**|**page**  <br>*required*|current page|integer|`0`|
-|**Query**|**per_page**  <br>*required*|return max item count, default 10, max 50|integer|`10`|
+|**Query**|**page**  <br>*必填*|current page|integer|`0`|
+|**Query**|**per_page**  <br>*必填*|return max item count, default 10, max 50|integer|`10`|
 
 
-#### Responses
+#### 响应
 
-|HTTP Code|Description|Schema|
+|HTTP代码|说明|类型|
 |---|---|---|
 |**200**|OK|< [model.Scheduler](#model-scheduler) > array|
-|**400**||No Content|
-|**404**||No Content|
-|**500**||No Content|
+|**400**||无内容|
+|**404**||无内容|
+|**500**||无内容|
 
 
-#### Consumes
-
-* `application/json`
-
-
-#### Produces
+#### 消耗
 
 * `application/json`
 
 
-#### Tags
+#### 生成
+
+* `application/json`
+
+
+#### 标签
 
 * Scheduler
 
@@ -1823,38 +1859,38 @@ GET /api/v1/schedulers/{id}
 ```
 
 
-#### Description
+#### 说明
 Get Scheduler by id
 
 
-#### Parameters
+#### 参数
 
-|Type|Name|Description|Schema|
+|类型|名称|说明|类型|
 |---|---|---|---|
-|**Path**|**id**  <br>*required*|id|string|
+|**Path**|**id**  <br>*必填*|id|string|
 
 
-#### Responses
+#### 响应
 
-|HTTP Code|Description|Schema|
+|HTTP代码|说明|类型|
 |---|---|---|
 |**200**|OK|[model.Scheduler](#model-scheduler)|
-|**400**||No Content|
-|**404**||No Content|
-|**500**||No Content|
+|**400**||无内容|
+|**404**||无内容|
+|**500**||无内容|
 
 
-#### Consumes
-
-* `application/json`
-
-
-#### Produces
+#### 消耗
 
 * `application/json`
 
 
-#### Tags
+#### 生成
+
+* `application/json`
+
+
+#### 标签
 
 * Scheduler
 
@@ -1866,38 +1902,38 @@ DELETE /api/v1/schedulers/{id}
 ```
 
 
-#### Description
+#### 说明
 Destroy by id
 
 
-#### Parameters
+#### 参数
 
-|Type|Name|Description|Schema|
+|类型|名称|说明|类型|
 |---|---|---|---|
-|**Path**|**id**  <br>*required*|id|string|
+|**Path**|**id**  <br>*必填*|id|string|
 
 
-#### Responses
+#### 响应
 
-|HTTP Code|Schema|
+|HTTP代码|类型|
 |---|---|
-|**200**|No Content|
-|**400**|No Content|
-|**404**|No Content|
-|**500**|No Content|
+|**200**|无内容|
+|**400**|无内容|
+|**404**|无内容|
+|**500**|无内容|
 
 
-#### Consumes
-
-* `application/json`
-
-
-#### Produces
+#### 消耗
 
 * `application/json`
 
 
-#### Tags
+#### 生成
+
+* `application/json`
+
+
+#### 标签
 
 * Scheduler
 
@@ -1909,39 +1945,39 @@ PATCH /api/v1/schedulers/{id}
 ```
 
 
-#### Description
+#### 说明
 Update by json config
 
 
-#### Parameters
+#### 参数
 
-|Type|Name|Description|Schema|
+|类型|名称|说明|类型|
 |---|---|---|---|
-|**Path**|**id**  <br>*required*|id|string|
-|**Body**|**Scheduler**  <br>*required*|Scheduler|[types.UpdateSchedulerRequest](#types-updateschedulerrequest)|
+|**Path**|**id**  <br>*必填*|id|string|
+|**Body**|**Scheduler**  <br>*必填*|Scheduler|[types.UpdateSchedulerRequest](#types-updateschedulerrequest)|
 
 
-#### Responses
+#### 响应
 
-|HTTP Code|Description|Schema|
+|HTTP代码|说明|类型|
 |---|---|---|
 |**200**|OK|[model.Scheduler](#model-scheduler)|
-|**400**||No Content|
-|**404**||No Content|
-|**500**||No Content|
+|**400**||无内容|
+|**404**||无内容|
+|**500**||无内容|
 
 
-#### Consumes
-
-* `application/json`
-
-
-#### Produces
+#### 消耗
 
 * `application/json`
 
 
-#### Tags
+#### 生成
+
+* `application/json`
+
+
+#### 标签
 
 * Scheduler
 
@@ -1953,38 +1989,38 @@ POST /api/v1/security-groups
 ```
 
 
-#### Description
+#### 说明
 create by json config
 
 
-#### Parameters
+#### 参数
 
-|Type|Name|Description|Schema|
+|类型|名称|说明|类型|
 |---|---|---|---|
-|**Body**|**SecurityGroup**  <br>*required*|SecurityGroup|[types.CreateSecurityGroupRequest](#types-createsecuritygrouprequest)|
+|**Body**|**SecurityGroup**  <br>*必填*|SecurityGroup|[types.CreateSecurityGroupRequest](#types-createsecuritygrouprequest)|
 
 
-#### Responses
+#### 响应
 
-|HTTP Code|Description|Schema|
+|HTTP代码|说明|类型|
 |---|---|---|
 |**200**|OK|[model.SecurityGroup](#model-securitygroup)|
-|**400**||No Content|
-|**404**||No Content|
-|**500**||No Content|
+|**400**||无内容|
+|**404**||无内容|
+|**500**||无内容|
 
 
-#### Consumes
-
-* `application/json`
-
-
-#### Produces
+#### 消耗
 
 * `application/json`
 
 
-#### Tags
+#### 生成
+
+* `application/json`
+
+
+#### 标签
 
 * SecurityGroup
 
@@ -1996,39 +2032,39 @@ GET /api/v1/security-groups
 ```
 
 
-#### Description
+#### 说明
 Get SecurityGroups
 
 
-#### Parameters
+#### 参数
 
-|Type|Name|Description|Schema|Default|
+|类型|名称|说明|类型|默认值|
 |---|---|---|---|---|
-|**Query**|**page**  <br>*required*|current page|integer|`0`|
-|**Query**|**per_page**  <br>*required*|return max item count, default 10, max 50|integer|`10`|
+|**Query**|**page**  <br>*必填*|current page|integer|`0`|
+|**Query**|**per_page**  <br>*必填*|return max item count, default 10, max 50|integer|`10`|
 
 
-#### Responses
+#### 响应
 
-|HTTP Code|Description|Schema|
+|HTTP代码|说明|类型|
 |---|---|---|
 |**200**|OK|< [model.SecurityGroup](#model-securitygroup) > array|
-|**400**||No Content|
-|**404**||No Content|
-|**500**||No Content|
+|**400**||无内容|
+|**404**||无内容|
+|**500**||无内容|
 
 
-#### Consumes
-
-* `application/json`
-
-
-#### Produces
+#### 消耗
 
 * `application/json`
 
 
-#### Tags
+#### 生成
+
+* `application/json`
+
+
+#### 标签
 
 * SecurityGroup
 
@@ -2040,38 +2076,38 @@ GET /api/v1/security-groups/{id}
 ```
 
 
-#### Description
+#### 说明
 Get SecurityGroup by id
 
 
-#### Parameters
+#### 参数
 
-|Type|Name|Description|Schema|
+|类型|名称|说明|类型|
 |---|---|---|---|
-|**Path**|**id**  <br>*required*|id|string|
+|**Path**|**id**  <br>*必填*|id|string|
 
 
-#### Responses
+#### 响应
 
-|HTTP Code|Description|Schema|
+|HTTP代码|说明|类型|
 |---|---|---|
 |**200**|OK|[model.SecurityGroup](#model-securitygroup)|
-|**400**||No Content|
-|**404**||No Content|
-|**500**||No Content|
+|**400**||无内容|
+|**404**||无内容|
+|**500**||无内容|
 
 
-#### Consumes
-
-* `application/json`
-
-
-#### Produces
+#### 消耗
 
 * `application/json`
 
 
-#### Tags
+#### 生成
+
+* `application/json`
+
+
+#### 标签
 
 * SecurityGroup
 
@@ -2083,39 +2119,39 @@ PATCH /api/v1/security-groups/{id}
 ```
 
 
-#### Description
+#### 说明
 Update by json config
 
 
-#### Parameters
+#### 参数
 
-|Type|Name|Description|Schema|
+|类型|名称|说明|类型|
 |---|---|---|---|
-|**Path**|**id**  <br>*required*|id|string|
-|**Body**|**SecurityGroup**  <br>*required*|SecurityGroup|[types.UpdateSecurityGroupRequest](#types-updatesecuritygrouprequest)|
+|**Path**|**id**  <br>*必填*|id|string|
+|**Body**|**SecurityGroup**  <br>*必填*|SecurityGroup|[types.UpdateSecurityGroupRequest](#types-updatesecuritygrouprequest)|
 
 
-#### Responses
+#### 响应
 
-|HTTP Code|Description|Schema|
+|HTTP代码|说明|类型|
 |---|---|---|
 |**200**|OK|[model.SecurityGroup](#model-securitygroup)|
-|**400**||No Content|
-|**404**||No Content|
-|**500**||No Content|
+|**400**||无内容|
+|**404**||无内容|
+|**500**||无内容|
 
 
-#### Consumes
-
-* `application/json`
-
-
-#### Produces
+#### 消耗
 
 * `application/json`
 
 
-#### Tags
+#### 生成
+
+* `application/json`
+
+
+#### 标签
 
 * SecurityGroup
 
@@ -2127,39 +2163,39 @@ PUT /api/v1/security-groups/{id}/scheduler-clusters/{scheduler_cluster_id}
 ```
 
 
-#### Description
+#### 说明
 Add Scheduler to SecurityGroup
 
 
-#### Parameters
+#### 参数
 
-|Type|Name|Description|Schema|
+|类型|名称|说明|类型|
 |---|---|---|---|
-|**Path**|**id**  <br>*required*|id|string|
-|**Path**|**scheduler_cluster_id**  <br>*required*|scheduler cluster id|string|
+|**Path**|**id**  <br>*必填*|id|string|
+|**Path**|**scheduler_cluster_id**  <br>*必填*|scheduler cluster id|string|
 
 
-#### Responses
+#### 响应
 
-|HTTP Code|Schema|
+|HTTP代码|类型|
 |---|---|
-|**200**|No Content|
-|**400**|No Content|
-|**404**|No Content|
-|**500**|No Content|
+|**200**|无内容|
+|**400**|无内容|
+|**404**|无内容|
+|**500**|无内容|
 
 
-#### Consumes
-
-* `application/json`
-
-
-#### Produces
+#### 消耗
 
 * `application/json`
 
 
-#### Tags
+#### 生成
+
+* `application/json`
+
+
+#### 标签
 
 * SecurityGroup
 
@@ -2171,39 +2207,39 @@ PUT /api/v1/security-groups/{id}/security-rules/{security_rule_id}
 ```
 
 
-#### Description
+#### 说明
 Add SecurityRule to SecurityGroup
 
 
-#### Parameters
+#### 参数
 
-|Type|Name|Description|Schema|
+|类型|名称|说明|类型|
 |---|---|---|---|
-|**Path**|**id**  <br>*required*|id|string|
-|**Path**|**security_rule_id**  <br>*required*|security rule id|string|
+|**Path**|**id**  <br>*必填*|id|string|
+|**Path**|**security_rule_id**  <br>*必填*|security rule id|string|
 
 
-#### Responses
+#### 响应
 
-|HTTP Code|Schema|
+|HTTP代码|类型|
 |---|---|
-|**200**|No Content|
-|**400**|No Content|
-|**404**|No Content|
-|**500**|No Content|
+|**200**|无内容|
+|**400**|无内容|
+|**404**|无内容|
+|**500**|无内容|
 
 
-#### Consumes
-
-* `application/json`
-
-
-#### Produces
+#### 消耗
 
 * `application/json`
 
 
-#### Tags
+#### 生成
+
+* `application/json`
+
+
+#### 标签
 
 * SecurityGroup
 
@@ -2215,39 +2251,39 @@ DELETE /api/v1/security-groups/{id}/security-rules/{security_rule_id}
 ```
 
 
-#### Description
+#### 说明
 Destroy SecurityRule to SecurityGroup
 
 
-#### Parameters
+#### 参数
 
-|Type|Name|Description|Schema|
+|类型|名称|说明|类型|
 |---|---|---|---|
-|**Path**|**id**  <br>*required*|id|string|
-|**Path**|**security_rule_id**  <br>*required*|security rule id|string|
+|**Path**|**id**  <br>*必填*|id|string|
+|**Path**|**security_rule_id**  <br>*必填*|security rule id|string|
 
 
-#### Responses
+#### 响应
 
-|HTTP Code|Schema|
+|HTTP代码|类型|
 |---|---|
-|**200**|No Content|
-|**400**|No Content|
-|**404**|No Content|
-|**500**|No Content|
+|**200**|无内容|
+|**400**|无内容|
+|**404**|无内容|
+|**500**|无内容|
 
 
-#### Consumes
-
-* `application/json`
-
-
-#### Produces
+#### 消耗
 
 * `application/json`
 
 
-#### Tags
+#### 生成
+
+* `application/json`
+
+
+#### 标签
 
 * SecurityGroup
 
@@ -2259,39 +2295,39 @@ PUT /api/v1/security-groups/{id}/seed-peer-clusters/{seed_peer_cluster_id}
 ```
 
 
-#### Description
+#### 说明
 Add SeedPeer to SecurityGroup
 
 
-#### Parameters
+#### 参数
 
-|Type|Name|Description|Schema|
+|类型|名称|说明|类型|
 |---|---|---|---|
-|**Path**|**id**  <br>*required*|id|string|
-|**Path**|**seed_peer_cluster_id**  <br>*required*|seed peer cluster id|string|
+|**Path**|**id**  <br>*必填*|id|string|
+|**Path**|**seed_peer_cluster_id**  <br>*必填*|seed peer cluster id|string|
 
 
-#### Responses
+#### 响应
 
-|HTTP Code|Schema|
+|HTTP代码|类型|
 |---|---|
-|**200**|No Content|
-|**400**|No Content|
-|**404**|No Content|
-|**500**|No Content|
+|**200**|无内容|
+|**400**|无内容|
+|**404**|无内容|
+|**500**|无内容|
 
 
-#### Consumes
-
-* `application/json`
-
-
-#### Produces
+#### 消耗
 
 * `application/json`
 
 
-#### Tags
+#### 生成
+
+* `application/json`
+
+
+#### 标签
 
 * SecurityGroup
 
@@ -2303,38 +2339,38 @@ POST /api/v1/security-rules
 ```
 
 
-#### Description
+#### 说明
 create by json config
 
 
-#### Parameters
+#### 参数
 
-|Type|Name|Description|Schema|
+|类型|名称|说明|类型|
 |---|---|---|---|
-|**Body**|**SecurityRule**  <br>*required*|SecurityRule|[types.CreateSecurityRuleRequest](#types-createsecurityrulerequest)|
+|**Body**|**SecurityRule**  <br>*必填*|SecurityRule|[types.CreateSecurityRuleRequest](#types-createsecurityrulerequest)|
 
 
-#### Responses
+#### 响应
 
-|HTTP Code|Description|Schema|
+|HTTP代码|说明|类型|
 |---|---|---|
 |**200**|OK|[model.SecurityRule](#model-securityrule)|
-|**400**||No Content|
-|**404**||No Content|
-|**500**||No Content|
+|**400**||无内容|
+|**404**||无内容|
+|**500**||无内容|
 
 
-#### Consumes
-
-* `application/json`
-
-
-#### Produces
+#### 消耗
 
 * `application/json`
 
 
-#### Tags
+#### 生成
+
+* `application/json`
+
+
+#### 标签
 
 * SecurityRule
 
@@ -2346,39 +2382,39 @@ GET /api/v1/security-rules
 ```
 
 
-#### Description
+#### 说明
 Get SecurityRules
 
 
-#### Parameters
+#### 参数
 
-|Type|Name|Description|Schema|Default|
+|类型|名称|说明|类型|默认值|
 |---|---|---|---|---|
-|**Query**|**page**  <br>*required*|current page|integer|`0`|
-|**Query**|**per_page**  <br>*required*|return max item count, default 10, max 50|integer|`10`|
+|**Query**|**page**  <br>*必填*|current page|integer|`0`|
+|**Query**|**per_page**  <br>*必填*|return max item count, default 10, max 50|integer|`10`|
 
 
-#### Responses
+#### 响应
 
-|HTTP Code|Description|Schema|
+|HTTP代码|说明|类型|
 |---|---|---|
 |**200**|OK|< [model.SecurityRule](#model-securityrule) > array|
-|**400**||No Content|
-|**404**||No Content|
-|**500**||No Content|
+|**400**||无内容|
+|**404**||无内容|
+|**500**||无内容|
 
 
-#### Consumes
-
-* `application/json`
-
-
-#### Produces
+#### 消耗
 
 * `application/json`
 
 
-#### Tags
+#### 生成
+
+* `application/json`
+
+
+#### 标签
 
 * SecurityRule
 
@@ -2390,38 +2426,38 @@ GET /api/v1/security-rules/{id}
 ```
 
 
-#### Description
+#### 说明
 Get SecurityRule by id
 
 
-#### Parameters
+#### 参数
 
-|Type|Name|Description|Schema|
+|类型|名称|说明|类型|
 |---|---|---|---|
-|**Path**|**id**  <br>*required*|id|string|
+|**Path**|**id**  <br>*必填*|id|string|
 
 
-#### Responses
+#### 响应
 
-|HTTP Code|Description|Schema|
+|HTTP代码|说明|类型|
 |---|---|---|
 |**200**|OK|[model.SecurityRule](#model-securityrule)|
-|**400**||No Content|
-|**404**||No Content|
-|**500**||No Content|
+|**400**||无内容|
+|**404**||无内容|
+|**500**||无内容|
 
 
-#### Consumes
-
-* `application/json`
-
-
-#### Produces
+#### 消耗
 
 * `application/json`
 
 
-#### Tags
+#### 生成
+
+* `application/json`
+
+
+#### 标签
 
 * SecurityRule
 
@@ -2433,39 +2469,39 @@ PATCH /api/v1/security-rules/{id}
 ```
 
 
-#### Description
+#### 说明
 Update by json config
 
 
-#### Parameters
+#### 参数
 
-|Type|Name|Description|Schema|
+|类型|名称|说明|类型|
 |---|---|---|---|
-|**Path**|**id**  <br>*required*|id|string|
-|**Body**|**SecurityRule**  <br>*required*|SecurityRule|[types.UpdateSecurityRuleRequest](#types-updatesecurityrulerequest)|
+|**Path**|**id**  <br>*必填*|id|string|
+|**Body**|**SecurityRule**  <br>*必填*|SecurityRule|[types.UpdateSecurityRuleRequest](#types-updatesecurityrulerequest)|
 
 
-#### Responses
+#### 响应
 
-|HTTP Code|Description|Schema|
+|HTTP代码|说明|类型|
 |---|---|---|
 |**200**|OK|[model.SecurityRule](#model-securityrule)|
-|**400**||No Content|
-|**404**||No Content|
-|**500**||No Content|
+|**400**||无内容|
+|**404**||无内容|
+|**500**||无内容|
 
 
-#### Consumes
-
-* `application/json`
-
-
-#### Produces
+#### 消耗
 
 * `application/json`
 
 
-#### Tags
+#### 生成
+
+* `application/json`
+
+
+#### 标签
 
 * SecurityRule
 
@@ -2477,38 +2513,38 @@ DELETE /api/v1/securityGroups/{id}
 ```
 
 
-#### Description
+#### 说明
 Destroy by id
 
 
-#### Parameters
+#### 参数
 
-|Type|Name|Description|Schema|
+|类型|名称|说明|类型|
 |---|---|---|---|
-|**Path**|**id**  <br>*required*|id|string|
+|**Path**|**id**  <br>*必填*|id|string|
 
 
-#### Responses
+#### 响应
 
-|HTTP Code|Schema|
+|HTTP代码|类型|
 |---|---|
-|**200**|No Content|
-|**400**|No Content|
-|**404**|No Content|
-|**500**|No Content|
+|**200**|无内容|
+|**400**|无内容|
+|**404**|无内容|
+|**500**|无内容|
 
 
-#### Consumes
-
-* `application/json`
-
-
-#### Produces
+#### 消耗
 
 * `application/json`
 
 
-#### Tags
+#### 生成
+
+* `application/json`
+
+
+#### 标签
 
 * SecurityGroup
 
@@ -2520,38 +2556,38 @@ DELETE /api/v1/securityRules/{id}
 ```
 
 
-#### Description
+#### 说明
 Destroy by id
 
 
-#### Parameters
+#### 参数
 
-|Type|Name|Description|Schema|
+|类型|名称|说明|类型|
 |---|---|---|---|
-|**Path**|**id**  <br>*required*|id|string|
+|**Path**|**id**  <br>*必填*|id|string|
 
 
-#### Responses
+#### 响应
 
-|HTTP Code|Schema|
+|HTTP代码|类型|
 |---|---|
-|**200**|No Content|
-|**400**|No Content|
-|**404**|No Content|
-|**500**|No Content|
+|**200**|无内容|
+|**400**|无内容|
+|**404**|无内容|
+|**500**|无内容|
 
 
-#### Consumes
-
-* `application/json`
-
-
-#### Produces
+#### 消耗
 
 * `application/json`
 
 
-#### Tags
+#### 生成
+
+* `application/json`
+
+
+#### 标签
 
 * SecurityRule
 
@@ -2563,38 +2599,38 @@ POST /api/v1/seed-peer-clusters
 ```
 
 
-#### Description
+#### 说明
 create by json config
 
 
-#### Parameters
+#### 参数
 
-|Type|Name|Description|Schema|
+|类型|名称|说明|类型|
 |---|---|---|---|
-|**Body**|**SeedPeerCluster**  <br>*required*|DNCluster|[types.CreateSeedPeerClusterRequest](#types-createseedpeerclusterrequest)|
+|**Body**|**SeedPeerCluster**  <br>*必填*|DNCluster|[types.CreateSeedPeerClusterRequest](#types-createseedpeerclusterrequest)|
 
 
-#### Responses
+#### 响应
 
-|HTTP Code|Description|Schema|
+|HTTP代码|说明|类型|
 |---|---|---|
 |**200**|OK|[model.SeedPeerCluster](#model-seedpeercluster)|
-|**400**||No Content|
-|**404**||No Content|
-|**500**||No Content|
+|**400**||无内容|
+|**404**||无内容|
+|**500**||无内容|
 
 
-#### Consumes
-
-* `application/json`
-
-
-#### Produces
+#### 消耗
 
 * `application/json`
 
 
-#### Tags
+#### 生成
+
+* `application/json`
+
+
+#### 标签
 
 * SeedPeerCluster
 
@@ -2606,39 +2642,39 @@ GET /api/v1/seed-peer-clusters
 ```
 
 
-#### Description
+#### 说明
 Get SeedPeerClusters
 
 
-#### Parameters
+#### 参数
 
-|Type|Name|Description|Schema|Default|
+|类型|名称|说明|类型|默认值|
 |---|---|---|---|---|
-|**Query**|**page**  <br>*required*|current page|integer|`0`|
-|**Query**|**per_page**  <br>*required*|return max item count, default 10, max 50|integer|`10`|
+|**Query**|**page**  <br>*必填*|current page|integer|`0`|
+|**Query**|**per_page**  <br>*必填*|return max item count, default 10, max 50|integer|`10`|
 
 
-#### Responses
+#### 响应
 
-|HTTP Code|Description|Schema|
+|HTTP代码|说明|类型|
 |---|---|---|
 |**200**|OK|< [model.SeedPeerCluster](#model-seedpeercluster) > array|
-|**400**||No Content|
-|**404**||No Content|
-|**500**||No Content|
+|**400**||无内容|
+|**404**||无内容|
+|**500**||无内容|
 
 
-#### Consumes
-
-* `application/json`
-
-
-#### Produces
+#### 消耗
 
 * `application/json`
 
 
-#### Tags
+#### 生成
+
+* `application/json`
+
+
+#### 标签
 
 * SeedPeerCluster
 
@@ -2650,38 +2686,38 @@ GET /api/v1/seed-peer-clusters/{id}
 ```
 
 
-#### Description
+#### 说明
 Get SeedPeerCluster by id
 
 
-#### Parameters
+#### 参数
 
-|Type|Name|Description|Schema|
+|类型|名称|说明|类型|
 |---|---|---|---|
-|**Path**|**id**  <br>*required*|id|string|
+|**Path**|**id**  <br>*必填*|id|string|
 
 
-#### Responses
+#### 响应
 
-|HTTP Code|Description|Schema|
+|HTTP代码|说明|类型|
 |---|---|---|
 |**200**|OK|[model.SeedPeerCluster](#model-seedpeercluster)|
-|**400**||No Content|
-|**404**||No Content|
-|**500**||No Content|
+|**400**||无内容|
+|**404**||无内容|
+|**500**||无内容|
 
 
-#### Consumes
-
-* `application/json`
-
-
-#### Produces
+#### 消耗
 
 * `application/json`
 
 
-#### Tags
+#### 生成
+
+* `application/json`
+
+
+#### 标签
 
 * SeedPeerCluster
 
@@ -2693,38 +2729,38 @@ DELETE /api/v1/seed-peer-clusters/{id}
 ```
 
 
-#### Description
+#### 说明
 Destroy by id
 
 
-#### Parameters
+#### 参数
 
-|Type|Name|Description|Schema|
+|类型|名称|说明|类型|
 |---|---|---|---|
-|**Path**|**id**  <br>*required*|id|string|
+|**Path**|**id**  <br>*必填*|id|string|
 
 
-#### Responses
+#### 响应
 
-|HTTP Code|Schema|
+|HTTP代码|类型|
 |---|---|
-|**200**|No Content|
-|**400**|No Content|
-|**404**|No Content|
-|**500**|No Content|
+|**200**|无内容|
+|**400**|无内容|
+|**404**|无内容|
+|**500**|无内容|
 
 
-#### Consumes
-
-* `application/json`
-
-
-#### Produces
+#### 消耗
 
 * `application/json`
 
 
-#### Tags
+#### 生成
+
+* `application/json`
+
+
+#### 标签
 
 * SeedPeerCluster
 
@@ -2736,39 +2772,39 @@ PATCH /api/v1/seed-peer-clusters/{id}
 ```
 
 
-#### Description
+#### 说明
 Update by json config
 
 
-#### Parameters
+#### 参数
 
-|Type|Name|Description|Schema|
+|类型|名称|说明|类型|
 |---|---|---|---|
-|**Path**|**id**  <br>*required*|id|string|
-|**Body**|**SeedPeerCluster**  <br>*required*|SeedPeerCluster|[types.UpdateSeedPeerClusterRequest](#types-updateseedpeerclusterrequest)|
+|**Path**|**id**  <br>*必填*|id|string|
+|**Body**|**SeedPeerCluster**  <br>*必填*|SeedPeerCluster|[types.UpdateSeedPeerClusterRequest](#types-updateseedpeerclusterrequest)|
 
 
-#### Responses
+#### 响应
 
-|HTTP Code|Description|Schema|
+|HTTP代码|说明|类型|
 |---|---|---|
 |**200**|OK|[model.SeedPeerCluster](#model-seedpeercluster)|
-|**400**||No Content|
-|**404**||No Content|
-|**500**||No Content|
+|**400**||无内容|
+|**404**||无内容|
+|**500**||无内容|
 
 
-#### Consumes
-
-* `application/json`
-
-
-#### Produces
+#### 消耗
 
 * `application/json`
 
 
-#### Tags
+#### 生成
+
+* `application/json`
+
+
+#### 标签
 
 * SeedPeerCluster
 
@@ -2780,39 +2816,39 @@ PUT /api/v1/seed-peer-clusters/{id}/scheduler-clusters/{scheduler_cluster_id}
 ```
 
 
-#### Description
+#### 说明
 Add SchedulerCluster to SeedPeerCluster
 
 
-#### Parameters
+#### 参数
 
-|Type|Name|Description|Schema|
+|类型|名称|说明|类型|
 |---|---|---|---|
-|**Path**|**id**  <br>*required*|id|string|
-|**Path**|**scheduler_cluster_id**  <br>*required*|scheduler cluster id|string|
+|**Path**|**id**  <br>*必填*|id|string|
+|**Path**|**scheduler_cluster_id**  <br>*必填*|scheduler cluster id|string|
 
 
-#### Responses
+#### 响应
 
-|HTTP Code|Schema|
+|HTTP代码|类型|
 |---|---|
-|**200**|No Content|
-|**400**|No Content|
-|**404**|No Content|
-|**500**|No Content|
+|**200**|无内容|
+|**400**|无内容|
+|**404**|无内容|
+|**500**|无内容|
 
 
-#### Consumes
-
-* `application/json`
-
-
-#### Produces
+#### 消耗
 
 * `application/json`
 
 
-#### Tags
+#### 生成
+
+* `application/json`
+
+
+#### 标签
 
 * SeedPeerCluster
 
@@ -2824,39 +2860,39 @@ PUT /api/v1/seed-peer-clusters/{id}/seed-peers/{seed_peer_id}
 ```
 
 
-#### Description
+#### 说明
 Add SeedPeer to SeedPeerCluster
 
 
-#### Parameters
+#### 参数
 
-|Type|Name|Description|Schema|
+|类型|名称|说明|类型|
 |---|---|---|---|
-|**Path**|**id**  <br>*required*|id|string|
-|**Path**|**seed_peer_id**  <br>*required*|seed peer id|string|
+|**Path**|**id**  <br>*必填*|id|string|
+|**Path**|**seed_peer_id**  <br>*必填*|seed peer id|string|
 
 
-#### Responses
+#### 响应
 
-|HTTP Code|Schema|
+|HTTP代码|类型|
 |---|---|
-|**200**|No Content|
-|**400**|No Content|
-|**404**|No Content|
-|**500**|No Content|
+|**200**|无内容|
+|**400**|无内容|
+|**404**|无内容|
+|**500**|无内容|
 
 
-#### Consumes
-
-* `application/json`
-
-
-#### Produces
+#### 消耗
 
 * `application/json`
 
 
-#### Tags
+#### 生成
+
+* `application/json`
+
+
+#### 标签
 
 * SeedPeerCluster
 
@@ -2868,38 +2904,38 @@ POST /api/v1/seed-peers
 ```
 
 
-#### Description
+#### 说明
 create by json config
 
 
-#### Parameters
+#### 参数
 
-|Type|Name|Description|Schema|
+|类型|名称|说明|类型|
 |---|---|---|---|
-|**Body**|**SeedPeer**  <br>*required*|SeedPeer|[types.CreateSeedPeerRequest](#types-createseedpeerrequest)|
+|**Body**|**SeedPeer**  <br>*必填*|SeedPeer|[types.CreateSeedPeerRequest](#types-createseedpeerrequest)|
 
 
-#### Responses
+#### 响应
 
-|HTTP Code|Description|Schema|
+|HTTP代码|说明|类型|
 |---|---|---|
 |**200**|OK|[model.SeedPeer](#model-seedpeer)|
-|**400**||No Content|
-|**404**||No Content|
-|**500**||No Content|
+|**400**||无内容|
+|**404**||无内容|
+|**500**||无内容|
 
 
-#### Consumes
-
-* `application/json`
-
-
-#### Produces
+#### 消耗
 
 * `application/json`
 
 
-#### Tags
+#### 生成
+
+* `application/json`
+
+
+#### 标签
 
 * SeedPeer
 
@@ -2911,39 +2947,39 @@ GET /api/v1/seed-peers
 ```
 
 
-#### Description
+#### 说明
 Get SeedPeers
 
 
-#### Parameters
+#### 参数
 
-|Type|Name|Description|Schema|Default|
+|类型|名称|说明|类型|默认值|
 |---|---|---|---|---|
-|**Query**|**page**  <br>*required*|current page|integer|`0`|
-|**Query**|**per_page**  <br>*required*|return max item count, default 10, max 50|integer|`10`|
+|**Query**|**page**  <br>*必填*|current page|integer|`0`|
+|**Query**|**per_page**  <br>*必填*|return max item count, default 10, max 50|integer|`10`|
 
 
-#### Responses
+#### 响应
 
-|HTTP Code|Description|Schema|
+|HTTP代码|说明|类型|
 |---|---|---|
 |**200**|OK|< [model.SeedPeer](#model-seedpeer) > array|
-|**400**||No Content|
-|**404**||No Content|
-|**500**||No Content|
+|**400**||无内容|
+|**404**||无内容|
+|**500**||无内容|
 
 
-#### Consumes
-
-* `application/json`
-
-
-#### Produces
+#### 消耗
 
 * `application/json`
 
 
-#### Tags
+#### 生成
+
+* `application/json`
+
+
+#### 标签
 
 * SeedPeer
 
@@ -2955,38 +2991,38 @@ GET /api/v1/seed-peers/{id}
 ```
 
 
-#### Description
+#### 说明
 Get SeedPeer by id
 
 
-#### Parameters
+#### 参数
 
-|Type|Name|Description|Schema|
+|类型|名称|说明|类型|
 |---|---|---|---|
-|**Path**|**id**  <br>*required*|id|string|
+|**Path**|**id**  <br>*必填*|id|string|
 
 
-#### Responses
+#### 响应
 
-|HTTP Code|Description|Schema|
+|HTTP代码|说明|类型|
 |---|---|---|
 |**200**|OK|[model.SeedPeer](#model-seedpeer)|
-|**400**||No Content|
-|**404**||No Content|
-|**500**||No Content|
+|**400**||无内容|
+|**404**||无内容|
+|**500**||无内容|
 
 
-#### Consumes
-
-* `application/json`
-
-
-#### Produces
+#### 消耗
 
 * `application/json`
 
 
-#### Tags
+#### 生成
+
+* `application/json`
+
+
+#### 标签
 
 * SeedPeer
 
@@ -2998,38 +3034,38 @@ DELETE /api/v1/seed-peers/{id}
 ```
 
 
-#### Description
+#### 说明
 Destroy by id
 
 
-#### Parameters
+#### 参数
 
-|Type|Name|Description|Schema|
+|类型|名称|说明|类型|
 |---|---|---|---|
-|**Path**|**id**  <br>*required*|id|string|
+|**Path**|**id**  <br>*必填*|id|string|
 
 
-#### Responses
+#### 响应
 
-|HTTP Code|Schema|
+|HTTP代码|类型|
 |---|---|
-|**200**|No Content|
-|**400**|No Content|
-|**404**|No Content|
-|**500**|No Content|
+|**200**|无内容|
+|**400**|无内容|
+|**404**|无内容|
+|**500**|无内容|
 
 
-#### Consumes
-
-* `application/json`
-
-
-#### Produces
+#### 消耗
 
 * `application/json`
 
 
-#### Tags
+#### 生成
+
+* `application/json`
+
+
+#### 标签
 
 * SeedPeer
 
@@ -3041,39 +3077,39 @@ PATCH /api/v1/seed-peers/{id}
 ```
 
 
-#### Description
+#### 说明
 Update by json config
 
 
-#### Parameters
+#### 参数
 
-|Type|Name|Description|Schema|
+|类型|名称|说明|类型|
 |---|---|---|---|
-|**Path**|**id**  <br>*required*|id|string|
-|**Body**|**SeedPeer**  <br>*required*|SeedPeer|[types.UpdateSeedPeerRequest](#types-updateseedpeerrequest)|
+|**Path**|**id**  <br>*必填*|id|string|
+|**Body**|**SeedPeer**  <br>*必填*|SeedPeer|[types.UpdateSeedPeerRequest](#types-updateseedpeerrequest)|
 
 
-#### Responses
+#### 响应
 
-|HTTP Code|Description|Schema|
+|HTTP代码|说明|类型|
 |---|---|---|
 |**200**|OK|[model.SeedPeer](#model-seedpeer)|
-|**400**||No Content|
-|**404**||No Content|
-|**500**||No Content|
+|**400**||无内容|
+|**404**||无内容|
+|**500**||无内容|
 
 
-#### Consumes
-
-* `application/json`
-
-
-#### Produces
+#### 消耗
 
 * `application/json`
 
 
-#### Tags
+#### 生成
+
+* `application/json`
+
+
+#### 标签
 
 * SeedPeer
 
@@ -3085,38 +3121,38 @@ GET /api/v1/user/signin/{name}
 ```
 
 
-#### Description
+#### 说明
 oauth signin by json config
 
 
-#### Parameters
+#### 参数
 
-|Type|Name|Description|Schema|
+|类型|名称|说明|类型|
 |---|---|---|---|
-|**Path**|**name**  <br>*required*|name|string|
+|**Path**|**name**  <br>*必填*|name|string|
 
 
-#### Responses
+#### 响应
 
-|HTTP Code|Schema|
+|HTTP代码|类型|
 |---|---|
-|**200**|No Content|
-|**400**|No Content|
-|**404**|No Content|
-|**500**|No Content|
+|**200**|无内容|
+|**400**|无内容|
+|**404**|无内容|
+|**500**|无内容|
 
 
-#### Consumes
-
-* `application/json`
-
-
-#### Produces
+#### 消耗
 
 * `application/json`
 
 
-#### Tags
+#### 生成
+
+* `application/json`
+
+
+#### 标签
 
 * User
 
@@ -3128,29 +3164,29 @@ GET /api/v1/user/signin/{name}/callback
 ```
 
 
-#### Description
+#### 说明
 oauth signin callback by json config
 
 
-#### Parameters
+#### 参数
 
-|Type|Name|Description|Schema|
+|类型|名称|说明|类型|
 |---|---|---|---|
-|**Path**|**name**  <br>*required*|name|string|
-|**Query**|**code**  <br>*required*|code|string|
+|**Path**|**name**  <br>*必填*|name|string|
+|**Query**|**code**  <br>*必填*|code|string|
 
 
-#### Responses
+#### 响应
 
-|HTTP Code|Schema|
+|HTTP代码|类型|
 |---|---|
-|**200**|No Content|
-|**400**|No Content|
-|**404**|No Content|
-|**500**|No Content|
+|**200**|无内容|
+|**400**|无内容|
+|**404**|无内容|
+|**500**|无内容|
 
 
-#### Tags
+#### 标签
 
 * Oauth
 
@@ -3162,37 +3198,37 @@ POST /api/v1/user/signup
 ```
 
 
-#### Description
+#### 说明
 signup by json config
 
 
-#### Parameters
+#### 参数
 
-|Type|Name|Description|Schema|
+|类型|名称|说明|类型|
 |---|---|---|---|
-|**Body**|**User**  <br>*required*|User|[types.SignUpRequest](#types-signuprequest)|
+|**Body**|**User**  <br>*必填*|User|[types.SignUpRequest](#types-signuprequest)|
 
 
-#### Responses
+#### 响应
 
-|HTTP Code|Description|Schema|
+|HTTP代码|说明|类型|
 |---|---|---|
 |**200**|OK|[model.User](#model-user)|
-|**400**||No Content|
-|**500**||No Content|
+|**400**||无内容|
+|**500**||无内容|
 
 
-#### Consumes
-
-* `application/json`
-
-
-#### Produces
+#### 消耗
 
 * `application/json`
 
 
-#### Tags
+#### 生成
+
+* `application/json`
+
+
+#### 标签
 
 * User
 
@@ -3204,39 +3240,39 @@ GET /api/v1/users
 ```
 
 
-#### Description
+#### 说明
 Get Users
 
 
-#### Parameters
+#### 参数
 
-|Type|Name|Description|Schema|Default|
+|类型|名称|说明|类型|默认值|
 |---|---|---|---|---|
-|**Query**|**page**  <br>*required*|current page|integer|`0`|
-|**Query**|**per_page**  <br>*required*|return max item count, default 10, max 50|integer|`10`|
+|**Query**|**page**  <br>*必填*|current page|integer|`0`|
+|**Query**|**per_page**  <br>*必填*|return max item count, default 10, max 50|integer|`10`|
 
 
-#### Responses
+#### 响应
 
-|HTTP Code|Description|Schema|
+|HTTP代码|说明|类型|
 |---|---|---|
 |**200**|OK|< [model.User](#model-user) > array|
-|**400**||No Content|
-|**404**||No Content|
-|**500**||No Content|
+|**400**||无内容|
+|**404**||无内容|
+|**500**||无内容|
 
 
-#### Consumes
-
-* `application/json`
-
-
-#### Produces
+#### 消耗
 
 * `application/json`
 
 
-#### Tags
+#### 生成
+
+* `application/json`
+
+
+#### 标签
 
 * User
 
@@ -3248,38 +3284,38 @@ GET /api/v1/users/{id}
 ```
 
 
-#### Description
+#### 说明
 Get User by id
 
 
-#### Parameters
+#### 参数
 
-|Type|Name|Description|Schema|
+|类型|名称|说明|类型|
 |---|---|---|---|
-|**Path**|**id**  <br>*required*|id|string|
+|**Path**|**id**  <br>*必填*|id|string|
 
 
-#### Responses
+#### 响应
 
-|HTTP Code|Description|Schema|
+|HTTP代码|说明|类型|
 |---|---|---|
 |**200**|OK|[model.User](#model-user)|
-|**400**||No Content|
-|**404**||No Content|
-|**500**||No Content|
+|**400**||无内容|
+|**404**||无内容|
+|**500**||无内容|
 
 
-#### Consumes
-
-* `application/json`
-
-
-#### Produces
+#### 消耗
 
 * `application/json`
 
 
-#### Tags
+#### 生成
+
+* `application/json`
+
+
+#### 标签
 
 * User
 
@@ -3291,39 +3327,39 @@ PATCH /api/v1/users/{id}
 ```
 
 
-#### Description
+#### 说明
 Update by json config
 
 
-#### Parameters
+#### 参数
 
-|Type|Name|Description|Schema|
+|类型|名称|说明|类型|
 |---|---|---|---|
-|**Path**|**id**  <br>*required*|id|string|
-|**Body**|**User**  <br>*required*|User|[types.UpdateUserRequest](#types-updateuserrequest)|
+|**Path**|**id**  <br>*必填*|id|string|
+|**Body**|**User**  <br>*必填*|User|[types.UpdateUserRequest](#types-updateuserrequest)|
 
 
-#### Responses
+#### 响应
 
-|HTTP Code|Description|Schema|
+|HTTP代码|说明|类型|
 |---|---|---|
 |**200**|OK|[model.User](#model-user)|
-|**400**||No Content|
-|**404**||No Content|
-|**500**||No Content|
+|**400**||无内容|
+|**404**||无内容|
+|**500**||无内容|
 
 
-#### Consumes
-
-* `application/json`
-
-
-#### Produces
+#### 消耗
 
 * `application/json`
 
 
-#### Tags
+#### 生成
+
+* `application/json`
+
+
+#### 标签
 
 * User
 
@@ -3335,37 +3371,37 @@ POST /api/v1/users/{id}/reset_password
 ```
 
 
-#### Description
+#### 说明
 reset password by json config
 
 
-#### Parameters
+#### 参数
 
-|Type|Name|Description|Schema|
+|类型|名称|说明|类型|
 |---|---|---|---|
-|**Body**|**User**  <br>*required*|User|[types.ResetPasswordRequest](#types-resetpasswordrequest)|
+|**Body**|**User**  <br>*必填*|User|[types.ResetPasswordRequest](#types-resetpasswordrequest)|
 
 
-#### Responses
+#### 响应
 
-|HTTP Code|Schema|
+|HTTP代码|类型|
 |---|---|
-|**200**|No Content|
-|**400**|No Content|
-|**500**|No Content|
+|**200**|无内容|
+|**400**|无内容|
+|**500**|无内容|
 
 
-#### Consumes
-
-* `application/json`
-
-
-#### Produces
+#### 消耗
 
 * `application/json`
 
 
-#### Tags
+#### 生成
+
+* `application/json`
+
+
+#### 标签
 
 * User
 
@@ -3377,32 +3413,32 @@ GET /api/v1/users/{id}/roles
 ```
 
 
-#### Description
+#### 说明
 get roles by json config
 
 
-#### Parameters
+#### 参数
 
-|Type|Name|Description|Schema|
+|类型|名称|说明|类型|
 |---|---|---|---|
-|**Path**|**id**  <br>*required*|id|string|
+|**Path**|**id**  <br>*必填*|id|string|
 
 
-#### Responses
+#### 响应
 
-|HTTP Code|Description|Schema|
+|HTTP代码|说明|类型|
 |---|---|---|
 |**200**|OK|< string > array|
-|**400**||No Content|
-|**500**||No Content|
+|**400**||无内容|
+|**500**||无内容|
 
 
-#### Produces
+#### 生成
 
 * `application/json`
 
 
-#### Tags
+#### 标签
 
 * User
 
@@ -3414,38 +3450,38 @@ PUT /api/v1/users/{id}/roles/{role}
 ```
 
 
-#### Description
+#### 说明
 add role to user by uri config
 
 
-#### Parameters
+#### 参数
 
-|Type|Name|Description|Schema|
+|类型|名称|说明|类型|
 |---|---|---|---|
-|**Path**|**id**  <br>*required*|id|string|
-|**Path**|**role**  <br>*required*|role|string|
+|**Path**|**id**  <br>*必填*|id|string|
+|**Path**|**role**  <br>*必填*|role|string|
 
 
-#### Responses
+#### 响应
 
-|HTTP Code|Schema|
+|HTTP代码|类型|
 |---|---|
-|**200**|No Content|
-|**400**|No Content|
-|**500**|No Content|
+|**200**|无内容|
+|**400**|无内容|
+|**500**|无内容|
 
 
-#### Consumes
-
-* `application/json`
-
-
-#### Produces
+#### 消耗
 
 * `application/json`
 
 
-#### Tags
+#### 生成
+
+* `application/json`
+
+
+#### 标签
 
 * Users
 
@@ -3457,38 +3493,38 @@ DELETE /api/v1/users/{id}/roles/{role}
 ```
 
 
-#### Description
+#### 说明
 delete role by uri config
 
 
-#### Parameters
+#### 参数
 
-|Type|Name|Description|Schema|
+|类型|名称|说明|类型|
 |---|---|---|---|
-|**Path**|**id**  <br>*required*|id|string|
-|**Path**|**role**  <br>*required*|role|string|
+|**Path**|**id**  <br>*必填*|id|string|
+|**Path**|**role**  <br>*必填*|role|string|
 
 
-#### Responses
+#### 响应
 
-|HTTP Code|Schema|
+|HTTP代码|类型|
 |---|---|
-|**200**|No Content|
-|**400**|No Content|
-|**500**|No Content|
+|**200**|无内容|
+|**400**|无内容|
+|**500**|无内容|
 
 
-#### Consumes
-
-* `application/json`
-
-
-#### Produces
+#### 消耗
 
 * `application/json`
 
 
-#### Tags
+#### 生成
+
+* `application/json`
+
+
+#### 标签
 
 * Users
 
@@ -3496,593 +3532,595 @@ delete role by uri config
 
 
 <a name="definitions"></a>
-## Definitions
+## 定义
 
 <a name="model-application"></a>
 ### model.Application
 
-|Name|Schema|
+|名称|类型|
 |---|---|
-|**bio**  <br>*optional*|string|
-|**created_at**  <br>*optional*|string|
-|**download_rate_limit**  <br>*optional*|integer|
-|**id**  <br>*optional*|integer|
-|**name**  <br>*optional*|string|
-|**scheduler_clusters**  <br>*optional*|< [model.SchedulerCluster](#model-schedulercluster) > array|
-|**seed_peer_clusters**  <br>*optional*|< [model.SeedPeerCluster](#model-seedpeercluster) > array|
-|**state**  <br>*optional*|string|
-|**updated_at**  <br>*optional*|string|
-|**url**  <br>*optional*|string|
-|**user**  <br>*optional*|[model.User](#model-user)|
-|**user_id**  <br>*optional*|integer|
+|**bio**  <br>*可选*|string|
+|**created_at**  <br>*可选*|string|
+|**download_rate_limit**  <br>*可选*|integer|
+|**id**  <br>*可选*|integer|
+|**name**  <br>*可选*|string|
+|**scheduler_clusters**  <br>*可选*|< [model.SchedulerCluster](#model-schedulercluster) > array|
+|**seed_peer_clusters**  <br>*可选*|< [model.SeedPeerCluster](#model-seedpeercluster) > array|
+|**state**  <br>*可选*|string|
+|**updated_at**  <br>*可选*|string|
+|**url**  <br>*可选*|string|
+|**user**  <br>*可选*|[model.User](#model-user)|
+|**user_id**  <br>*可选*|integer|
 
 
 <a name="model-config"></a>
 ### model.Config
 
-|Name|Schema|
+|名称|类型|
 |---|---|
-|**bio**  <br>*optional*|string|
-|**created_at**  <br>*optional*|string|
-|**id**  <br>*optional*|integer|
-|**name**  <br>*optional*|string|
-|**updated_at**  <br>*optional*|string|
-|**user_id**  <br>*optional*|integer|
-|**value**  <br>*optional*|string|
+|**bio**  <br>*可选*|string|
+|**created_at**  <br>*可选*|string|
+|**id**  <br>*可选*|integer|
+|**name**  <br>*可选*|string|
+|**updated_at**  <br>*可选*|string|
+|**user_id**  <br>*可选*|integer|
+|**value**  <br>*可选*|string|
 
 
 <a name="model-jsonmap"></a>
 ### model.JSONMap
-*Type* : object
+*类型* : object
 
 
 <a name="model-job"></a>
 ### model.Job
 
-|Name|Schema|
+|名称|类型|
 |---|---|
-|**args**  <br>*optional*|[model.JSONMap](#model-jsonmap)|
-|**bio**  <br>*optional*|string|
-|**created_at**  <br>*optional*|string|
-|**id**  <br>*optional*|integer|
-|**result**  <br>*optional*|[model.JSONMap](#model-jsonmap)|
-|**scheduler_clusters**  <br>*optional*|< [model.SchedulerCluster](#model-schedulercluster) > array|
-|**seed_peer_clusters**  <br>*optional*|< [model.SeedPeerCluster](#model-seedpeercluster) > array|
-|**state**  <br>*optional*|string|
-|**task_id**  <br>*optional*|string|
-|**type**  <br>*optional*|string|
-|**updated_at**  <br>*optional*|string|
-|**user_id**  <br>*optional*|integer|
+|**args**  <br>*可选*|[model.JSONMap](#model-jsonmap)|
+|**bio**  <br>*可选*|string|
+|**created_at**  <br>*可选*|string|
+|**id**  <br>*可选*|integer|
+|**result**  <br>*可选*|[model.JSONMap](#model-jsonmap)|
+|**scheduler_clusters**  <br>*可选*|< [model.SchedulerCluster](#model-schedulercluster) > array|
+|**seed_peer_clusters**  <br>*可选*|< [model.SeedPeerCluster](#model-seedpeercluster) > array|
+|**state**  <br>*可选*|string|
+|**task_id**  <br>*可选*|string|
+|**type**  <br>*可选*|string|
+|**updated_at**  <br>*可选*|string|
+|**user_id**  <br>*可选*|integer|
 
 
 <a name="model-oauth"></a>
 ### model.Oauth
 
-|Name|Schema|
+|名称|类型|
 |---|---|
-|**bio**  <br>*optional*|string|
-|**client_id**  <br>*optional*|string|
-|**client_secret**  <br>*optional*|string|
-|**created_at**  <br>*optional*|string|
-|**id**  <br>*optional*|integer|
-|**name**  <br>*optional*|string|
-|**redirect_url**  <br>*optional*|string|
-|**updated_at**  <br>*optional*|string|
+|**bio**  <br>*可选*|string|
+|**client_id**  <br>*可选*|string|
+|**client_secret**  <br>*可选*|string|
+|**created_at**  <br>*可选*|string|
+|**id**  <br>*可选*|integer|
+|**name**  <br>*可选*|string|
+|**redirect_url**  <br>*可选*|string|
+|**updated_at**  <br>*可选*|string|
 
 
 <a name="model-scheduler"></a>
 ### model.Scheduler
 
-|Name|Schema|
+|名称|类型|
 |---|---|
-|**created_at**  <br>*optional*|string|
-|**host_name**  <br>*optional*|string|
-|**id**  <br>*optional*|integer|
-|**idc**  <br>*optional*|string|
-|**ip**  <br>*optional*|string|
-|**location**  <br>*optional*|string|
-|**net_topology**  <br>*optional*|string|
-|**port**  <br>*optional*|integer|
-|**schedulerClusterID**  <br>*optional*|integer|
-|**state**  <br>*optional*|string|
-|**updated_at**  <br>*optional*|string|
+|**created_at**  <br>*可选*|string|
+|**host_name**  <br>*可选*|string|
+|**id**  <br>*可选*|integer|
+|**idc**  <br>*可选*|string|
+|**ip**  <br>*可选*|string|
+|**location**  <br>*可选*|string|
+|**net_topology**  <br>*可选*|string|
+|**port**  <br>*可选*|integer|
+|**schedulerClusterID**  <br>*可选*|integer|
+|**state**  <br>*可选*|string|
+|**updated_at**  <br>*可选*|string|
 
 
 <a name="model-schedulercluster"></a>
 ### model.SchedulerCluster
 
-|Name|Schema|
+|名称|类型|
 |---|---|
-|**application_id**  <br>*optional*|integer|
-|**bio**  <br>*optional*|string|
-|**client_config**  <br>*optional*|[model.JSONMap](#model-jsonmap)|
-|**config**  <br>*optional*|[model.JSONMap](#model-jsonmap)|
-|**created_at**  <br>*optional*|string|
-|**id**  <br>*optional*|integer|
-|**is_default**  <br>*optional*|boolean|
-|**jobs**  <br>*optional*|< [model.Job](#model-job) > array|
-|**name**  <br>*optional*|string|
-|**scopes**  <br>*optional*|[model.JSONMap](#model-jsonmap)|
-|**security_group_id**  <br>*optional*|integer|
-|**seed_peer_clusters**  <br>*optional*|< [model.SeedPeerCluster](#model-seedpeercluster) > array|
-|**updated_at**  <br>*optional*|string|
+|**application_id**  <br>*可选*|integer|
+|**bio**  <br>*可选*|string|
+|**client_config**  <br>*可选*|[model.JSONMap](#model-jsonmap)|
+|**config**  <br>*可选*|[model.JSONMap](#model-jsonmap)|
+|**created_at**  <br>*可选*|string|
+|**id**  <br>*可选*|integer|
+|**is_default**  <br>*可选*|boolean|
+|**jobs**  <br>*可选*|< [model.Job](#model-job) > array|
+|**name**  <br>*可选*|string|
+|**scopes**  <br>*可选*|[model.JSONMap](#model-jsonmap)|
+|**security_group_id**  <br>*可选*|integer|
+|**seed_peer_clusters**  <br>*可选*|< [model.SeedPeerCluster](#model-seedpeercluster) > array|
+|**updated_at**  <br>*可选*|string|
 
 
 <a name="model-securitygroup"></a>
 ### model.SecurityGroup
 
-|Name|Schema|
+|名称|类型|
 |---|---|
-|**bio**  <br>*optional*|string|
-|**created_at**  <br>*optional*|string|
-|**id**  <br>*optional*|integer|
-|**name**  <br>*optional*|string|
-|**security_rules**  <br>*optional*|< [model.SecurityRule](#model-securityrule) > array|
-|**updated_at**  <br>*optional*|string|
+|**bio**  <br>*可选*|string|
+|**created_at**  <br>*可选*|string|
+|**id**  <br>*可选*|integer|
+|**name**  <br>*可选*|string|
+|**security_rules**  <br>*可选*|< [model.SecurityRule](#model-securityrule) > array|
+|**updated_at**  <br>*可选*|string|
 
 
 <a name="model-securityrule"></a>
 ### model.SecurityRule
 
-|Name|Schema|
+|名称|类型|
 |---|---|
-|**bio**  <br>*optional*|string|
-|**created_at**  <br>*optional*|string|
-|**domain**  <br>*optional*|string|
-|**id**  <br>*optional*|integer|
-|**name**  <br>*optional*|string|
-|**proxy_domain**  <br>*optional*|string|
-|**security_groups**  <br>*optional*|< [model.SecurityGroup](#model-securitygroup) > array|
-|**updated_at**  <br>*optional*|string|
+|**bio**  <br>*可选*|string|
+|**created_at**  <br>*可选*|string|
+|**domain**  <br>*可选*|string|
+|**id**  <br>*可选*|integer|
+|**name**  <br>*可选*|string|
+|**proxy_domain**  <br>*可选*|string|
+|**security_groups**  <br>*可选*|< [model.SecurityGroup](#model-securitygroup) > array|
+|**updated_at**  <br>*可选*|string|
 
 
 <a name="model-seedpeer"></a>
 ### model.SeedPeer
 
-|Name|Schema|
+|名称|类型|
 |---|---|
-|**created_at**  <br>*optional*|string|
-|**download_port**  <br>*optional*|integer|
-|**host_name**  <br>*optional*|string|
-|**id**  <br>*optional*|integer|
-|**idc**  <br>*optional*|string|
-|**ip**  <br>*optional*|string|
-|**is_cdn**  <br>*optional*|boolean|
-|**location**  <br>*optional*|string|
-|**net_topology**  <br>*optional*|string|
-|**port**  <br>*optional*|integer|
-|**seedPeerClusterID**  <br>*optional*|integer|
-|**state**  <br>*optional*|string|
-|**type**  <br>*optional*|string|
-|**updated_at**  <br>*optional*|string|
+|**created_at**  <br>*可选*|string|
+|**download_port**  <br>*可选*|integer|
+|**host_name**  <br>*可选*|string|
+|**id**  <br>*可选*|integer|
+|**idc**  <br>*可选*|string|
+|**ip**  <br>*可选*|string|
+|**is_cdn**  <br>*可选*|boolean|
+|**location**  <br>*可选*|string|
+|**net_topology**  <br>*可选*|string|
+|**port**  <br>*可选*|integer|
+|**seedPeerClusterID**  <br>*可选*|integer|
+|**state**  <br>*可选*|string|
+|**type**  <br>*可选*|string|
+|**updated_at**  <br>*可选*|string|
 
 
 <a name="model-seedpeercluster"></a>
 ### model.SeedPeerCluster
 
-|Name|Schema|
+|名称|类型|
 |---|---|
-|**application_id**  <br>*optional*|integer|
-|**bio**  <br>*optional*|string|
-|**config**  <br>*optional*|[model.JSONMap](#model-jsonmap)|
-|**created_at**  <br>*optional*|string|
-|**id**  <br>*optional*|integer|
-|**is_default**  <br>*optional*|boolean|
-|**jobs**  <br>*optional*|< [model.Job](#model-job) > array|
-|**name**  <br>*optional*|string|
-|**scheduler_clusters**  <br>*optional*|< [model.SchedulerCluster](#model-schedulercluster) > array|
-|**scopes**  <br>*optional*|[model.JSONMap](#model-jsonmap)|
-|**security_group_id**  <br>*optional*|integer|
-|**updated_at**  <br>*optional*|string|
+|**application_id**  <br>*可选*|integer|
+|**bio**  <br>*可选*|string|
+|**config**  <br>*可选*|[model.JSONMap](#model-jsonmap)|
+|**created_at**  <br>*可选*|string|
+|**id**  <br>*可选*|integer|
+|**is_default**  <br>*可选*|boolean|
+|**jobs**  <br>*可选*|< [model.Job](#model-job) > array|
+|**name**  <br>*可选*|string|
+|**scheduler_clusters**  <br>*可选*|< [model.SchedulerCluster](#model-schedulercluster) > array|
+|**scopes**  <br>*可选*|[model.JSONMap](#model-jsonmap)|
+|**security_group_id**  <br>*可选*|integer|
+|**updated_at**  <br>*可选*|string|
 
 
 <a name="model-user"></a>
 ### model.User
 
-|Name|Schema|
+|名称|类型|
 |---|---|
-|**avatar**  <br>*optional*|string|
-|**bio**  <br>*optional*|string|
-|**created_at**  <br>*optional*|string|
-|**email**  <br>*optional*|string|
-|**id**  <br>*optional*|integer|
-|**location**  <br>*optional*|string|
-|**name**  <br>*optional*|string|
-|**phone**  <br>*optional*|string|
-|**state**  <br>*optional*|string|
-|**updated_at**  <br>*optional*|string|
+|**avatar**  <br>*可选*|string|
+|**bio**  <br>*可选*|string|
+|**created_at**  <br>*可选*|string|
+|**email**  <br>*可选*|string|
+|**id**  <br>*可选*|integer|
+|**location**  <br>*可选*|string|
+|**name**  <br>*可选*|string|
+|**phone**  <br>*可选*|string|
+|**state**  <br>*可选*|string|
+|**updated_at**  <br>*可选*|string|
 
 
 <a name="rbac-permission"></a>
 ### rbac.Permission
 
-|Name|Schema|
+|名称|类型|
 |---|---|
-|**action**  <br>*required*|enum (read, *)|
-|**object**  <br>*required*|string|
+|**action**  <br>*必填*|enum (read, *)|
+|**object**  <br>*必填*|string|
 
 
 <a name="types-addpermissionforrolerequest"></a>
 ### types.AddPermissionForRoleRequest
 
-|Name|Schema|
+|名称|类型|
 |---|---|
-|**action**  <br>*required*|enum (read, *)|
-|**object**  <br>*required*|string|
+|**action**  <br>*必填*|enum (read, *)|
+|**object**  <br>*必填*|string|
 
 
 <a name="types-createapplicationrequest"></a>
 ### types.CreateApplicationRequest
 
-|Name|Schema|
+|名称|类型|
 |---|---|
-|**bio**  <br>*optional*|string|
-|**download_rate_limit**  <br>*optional*|integer|
-|**name**  <br>*required*|string|
-|**state**  <br>*optional*|enum (enable, disable)|
-|**url**  <br>*optional*|string|
-|**user_id**  <br>*required*|integer|
+|**bio**  <br>*可选*|string|
+|**download_rate_limit**  <br>*可选*|integer|
+|**name**  <br>*必填*|string|
+|**state**  <br>*可选*|enum (enable, disable)|
+|**url**  <br>*可选*|string|
+|**user_id**  <br>*必填*|integer|
 
 
 <a name="types-createconfigrequest"></a>
 ### types.CreateConfigRequest
 
-|Name|Schema|
+|名称|类型|
 |---|---|
-|**bio**  <br>*optional*|string|
-|**name**  <br>*required*|string|
-|**user_id**  <br>*required*|integer|
-|**value**  <br>*required*|string|
+|**bio**  <br>*可选*|string|
+|**name**  <br>*必填*|string|
+|**user_id**  <br>*必填*|integer|
+|**value**  <br>*必填*|string|
 
 
 <a name="types-createjobrequest"></a>
 ### types.CreateJobRequest
 
-|Name|Schema|
+|名称|类型|
 |---|---|
-|**args**  <br>*optional*|object|
-|**bio**  <br>*optional*|string|
-|**result**  <br>*optional*|object|
-|**scheduler_cluster_ids**  <br>*optional*|< integer > array|
-|**seed_peer_cluster_ids**  <br>*optional*|< integer > array|
-|**type**  <br>*required*|string|
-|**user_id**  <br>*optional*|integer|
+|**args**  <br>*可选*|object|
+|**bio**  <br>*可选*|string|
+|**result**  <br>*可选*|object|
+|**scheduler_cluster_ids**  <br>*可选*|< integer > array|
+|**seed_peer_cluster_ids**  <br>*可选*|< integer > array|
+|**type**  <br>*必填*|string|
+|**user_id**  <br>*可选*|integer|
 
 
 <a name="types-createoauthrequest"></a>
 ### types.CreateOauthRequest
 
-|Name|Schema|
+|名称|类型|
 |---|---|
-|**bio**  <br>*optional*|string|
-|**client_id**  <br>*required*|string|
-|**client_secret**  <br>*required*|string|
-|**name**  <br>*required*|enum (github, google)|
-|**redirect_url**  <br>*optional*|string|
+|**bio**  <br>*可选*|string|
+|**client_id**  <br>*必填*|string|
+|**client_secret**  <br>*必填*|string|
+|**name**  <br>*必填*|enum (github, google)|
+|**redirect_url**  <br>*可选*|string|
 
 
 <a name="types-createrolerequest"></a>
 ### types.CreateRoleRequest
 
-|Name|Schema|
+|名称|类型|
 |---|---|
-|**permissions**  <br>*required*|< [rbac.Permission](#rbac-permission) > array|
-|**role**  <br>*required*|string|
+|**permissions**  <br>*必填*|< [rbac.Permission](#rbac-permission) > array|
+|**role**  <br>*必填*|string|
 
 
 <a name="types-createschedulerclusterrequest"></a>
 ### types.CreateSchedulerClusterRequest
 
-|Name|Schema|
+|名称|类型|
 |---|---|
-|**bio**  <br>*optional*|string|
-|**client_config**  <br>*required*|[types.SchedulerClusterClientConfig](#types-schedulerclusterclientconfig)|
-|**config**  <br>*required*|[types.SchedulerClusterConfig](#types-schedulerclusterconfig)|
-|**is_default**  <br>*optional*|boolean|
-|**name**  <br>*required*|string|
-|**scopes**  <br>*optional*|[types.SchedulerClusterScopes](#types-schedulerclusterscopes)|
-|**seed_peer_cluster_id**  <br>*optional*|integer|
+|**bio**  <br>*可选*|string|
+|**client_config**  <br>*必填*|[types.SchedulerClusterClientConfig](#types-schedulerclusterclientconfig)|
+|**config**  <br>*必填*|[types.SchedulerClusterConfig](#types-schedulerclusterconfig)|
+|**is_default**  <br>*可选*|boolean|
+|**name**  <br>*必填*|string|
+|**scopes**  <br>*可选*|[types.SchedulerClusterScopes](#types-schedulerclusterscopes)|
+|**security_group_id**  <br>*可选*|integer|
+|**seed_peer_cluster_id**  <br>*可选*|integer|
 
 
 <a name="types-createschedulerrequest"></a>
 ### types.CreateSchedulerRequest
 
-|Name|Schema|
+|名称|类型|
 |---|---|
-|**host_name**  <br>*required*|string|
-|**idc**  <br>*optional*|string|
-|**ip**  <br>*required*|string|
-|**location**  <br>*optional*|string|
-|**net_topology**  <br>*optional*|string|
-|**port**  <br>*required*|integer|
-|**scheduler_cluster_id**  <br>*required*|integer|
+|**host_name**  <br>*必填*|string|
+|**idc**  <br>*可选*|string|
+|**ip**  <br>*必填*|string|
+|**location**  <br>*可选*|string|
+|**net_topology**  <br>*可选*|string|
+|**port**  <br>*必填*|integer|
+|**scheduler_cluster_id**  <br>*必填*|integer|
 
 
 <a name="types-createsecuritygrouprequest"></a>
 ### types.CreateSecurityGroupRequest
 
-|Name|Schema|
+|名称|类型|
 |---|---|
-|**bio**  <br>*optional*|string|
-|**name**  <br>*required*|string|
+|**bio**  <br>*可选*|string|
+|**name**  <br>*必填*|string|
 
 
 <a name="types-createsecurityrulerequest"></a>
 ### types.CreateSecurityRuleRequest
 
-|Name|Schema|
+|名称|类型|
 |---|---|
-|**bio**  <br>*optional*|string|
-|**domain**  <br>*required*|string|
-|**name**  <br>*required*|string|
-|**proxy_domain**  <br>*optional*|string|
+|**bio**  <br>*可选*|string|
+|**domain**  <br>*必填*|string|
+|**name**  <br>*必填*|string|
+|**proxy_domain**  <br>*可选*|string|
 
 
 <a name="types-createseedpeerclusterrequest"></a>
 ### types.CreateSeedPeerClusterRequest
 
-|Name|Schema|
+|名称|类型|
 |---|---|
-|**bio**  <br>*optional*|string|
-|**config**  <br>*required*|[types.SeedPeerClusterConfig](#types-seedpeerclusterconfig)|
-|**is_default**  <br>*optional*|boolean|
-|**name**  <br>*required*|string|
-|**scopes**  <br>*optional*|[types.SeedPeerClusterScopes](#types-seedpeerclusterscopes)|
+|**bio**  <br>*可选*|string|
+|**config**  <br>*必填*|[types.SeedPeerClusterConfig](#types-seedpeerclusterconfig)|
+|**is_default**  <br>*可选*|boolean|
+|**name**  <br>*必填*|string|
+|**scopes**  <br>*可选*|[types.SeedPeerClusterScopes](#types-seedpeerclusterscopes)|
 
 
 <a name="types-createseedpeerrequest"></a>
 ### types.CreateSeedPeerRequest
 
-|Name|Schema|
+|名称|类型|
 |---|---|
-|**download_port**  <br>*required*|integer|
-|**host_name**  <br>*required*|string|
-|**idc**  <br>*optional*|string|
-|**ip**  <br>*required*|string|
-|**location**  <br>*optional*|string|
-|**net_topology**  <br>*optional*|string|
-|**port**  <br>*required*|integer|
-|**seed_peer_cluster_id**  <br>*required*|integer|
-|**type**  <br>*required*|enum (super, strong, weak)|
+|**download_port**  <br>*必填*|integer|
+|**host_name**  <br>*必填*|string|
+|**idc**  <br>*可选*|string|
+|**ip**  <br>*必填*|string|
+|**location**  <br>*可选*|string|
+|**net_topology**  <br>*可选*|string|
+|**port**  <br>*必填*|integer|
+|**seed_peer_cluster_id**  <br>*必填*|integer|
+|**type**  <br>*必填*|enum (super, strong, weak)|
 
 
 <a name="types-createv1preheatrequest"></a>
 ### types.CreateV1PreheatRequest
 
-|Name|Schema|
+|名称|类型|
 |---|---|
-|**filter**  <br>*optional*|string|
-|**headers**  <br>*optional*|< string, string > map|
-|**type**  <br>*required*|enum (image, file)|
-|**url**  <br>*required*|string|
+|**filter**  <br>*可选*|string|
+|**headers**  <br>*可选*|< string, string > map|
+|**type**  <br>*必填*|enum (image, file)|
+|**url**  <br>*必填*|string|
 
 
 <a name="types-createv1preheatresponse"></a>
 ### types.CreateV1PreheatResponse
 
-|Name|Schema|
+|名称|类型|
 |---|---|
-|**id**  <br>*optional*|string|
+|**id**  <br>*可选*|string|
 
 
 <a name="types-deletepermissionforrolerequest"></a>
 ### types.DeletePermissionForRoleRequest
 
-|Name|Schema|
+|名称|类型|
 |---|---|
-|**action**  <br>*required*|enum (read, *)|
-|**object**  <br>*required*|string|
+|**action**  <br>*必填*|enum (read, *)|
+|**object**  <br>*必填*|string|
 
 
 <a name="types-getv1preheatresponse"></a>
 ### types.GetV1PreheatResponse
 
-|Name|Schema|
+|名称|类型|
 |---|---|
-|**finishTime**  <br>*optional*|string|
-|**id**  <br>*optional*|string|
-|**startTime**  <br>*optional*|string|
-|**status**  <br>*optional*|string|
+|**finishTime**  <br>*可选*|string|
+|**id**  <br>*可选*|string|
+|**startTime**  <br>*可选*|string|
+|**status**  <br>*可选*|string|
 
 
 <a name="types-resetpasswordrequest"></a>
 ### types.ResetPasswordRequest
 
-|Name|Description|Schema|
+|名称|说明|类型|
 |---|---|---|
-|**new_password**  <br>*required*|**Length** : `8 - 20`|string|
-|**old_password**  <br>*required*|**Length** : `8 - 20`|string|
+|**new_password**  <br>*必填*|**长度** : `8 - 20`|string|
+|**old_password**  <br>*必填*|**长度** : `8 - 20`|string|
 
 
 <a name="types-schedulerclusterclientconfig"></a>
 ### types.SchedulerClusterClientConfig
 
-|Name|Description|Schema|
+|名称|说明|类型|
 |---|---|---|
-|**load_limit**  <br>*optional*|**Minimum value** : `1`  <br>**Maximum value** : `2000`|integer|
-|**parallel_count**  <br>*optional*|**Minimum value** : `1`  <br>**Maximum value** : `50`|integer|
+|**load_limit**  <br>*可选*|**最小值** : `1`  <br>**最大值** : `2000`|integer|
+|**parallel_count**  <br>*可选*|**最小值** : `1`  <br>**最大值** : `50`|integer|
 
 
 <a name="types-schedulerclusterconfig"></a>
 ### types.SchedulerClusterConfig
 
-|Name|Description|Schema|
+|名称|说明|类型|
 |---|---|---|
-|**filter_parent_limit**  <br>*optional*|**Minimum value** : `1`  <br>**Maximum value** : `100`|integer|
+|**filter_parent_limit**  <br>*可选*|**最小值** : `1`  <br>**最大值** : `100`|integer|
 
 
 <a name="types-schedulerclusterscopes"></a>
 ### types.SchedulerClusterScopes
 
-|Name|Schema|
+|名称|类型|
 |---|---|
-|**idc**  <br>*optional*|string|
-|**location**  <br>*optional*|string|
-|**net_topology**  <br>*optional*|string|
+|**idc**  <br>*可选*|string|
+|**location**  <br>*可选*|string|
+|**net_topology**  <br>*可选*|string|
 
 
 <a name="types-seedpeerclusterconfig"></a>
 ### types.SeedPeerClusterConfig
 
-|Name|Description|Schema|
+|名称|说明|类型|
 |---|---|---|
-|**load_limit**  <br>*optional*|**Minimum value** : `1`  <br>**Maximum value** : `5000`|integer|
+|**load_limit**  <br>*可选*|**最小值** : `1`  <br>**最大值** : `5000`|integer|
 
 
 <a name="types-seedpeerclusterscopes"></a>
 ### types.SeedPeerClusterScopes
 
-|Name|Schema|
+|名称|类型|
 |---|---|
-|**idc**  <br>*optional*|string|
-|**location**  <br>*optional*|string|
-|**net_topology**  <br>*optional*|string|
+|**idc**  <br>*可选*|string|
+|**location**  <br>*可选*|string|
+|**net_topology**  <br>*可选*|string|
 
 
 <a name="types-signuprequest"></a>
 ### types.SignUpRequest
 
-|Name|Description|Schema|
+|名称|说明|类型|
 |---|---|---|
-|**avatar**  <br>*optional*||string|
-|**bio**  <br>*optional*||string|
-|**email**  <br>*required*||string|
-|**location**  <br>*optional*||string|
-|**name**  <br>*required*|**Length** : `3 - 10`|string|
-|**password**  <br>*required*|**Length** : `8 - 20`|string|
-|**phone**  <br>*optional*||string|
+|**avatar**  <br>*可选*||string|
+|**bio**  <br>*可选*||string|
+|**email**  <br>*必填*||string|
+|**location**  <br>*可选*||string|
+|**name**  <br>*必填*|**长度** : `3 - 10`|string|
+|**password**  <br>*必填*|**长度** : `8 - 20`|string|
+|**phone**  <br>*可选*||string|
 
 
 <a name="types-updateapplicationrequest"></a>
 ### types.UpdateApplicationRequest
 
-|Name|Schema|
+|名称|类型|
 |---|---|
-|**bio**  <br>*optional*|string|
-|**download_rate_limit**  <br>*optional*|integer|
-|**name**  <br>*optional*|string|
-|**state**  <br>*optional*|enum (enable, disable)|
-|**url**  <br>*optional*|string|
-|**user_id**  <br>*required*|integer|
+|**bio**  <br>*可选*|string|
+|**download_rate_limit**  <br>*可选*|integer|
+|**name**  <br>*可选*|string|
+|**state**  <br>*可选*|enum (enable, disable)|
+|**url**  <br>*可选*|string|
+|**user_id**  <br>*必填*|integer|
 
 
 <a name="types-updateconfigrequest"></a>
 ### types.UpdateConfigRequest
 
-|Name|Schema|
+|名称|类型|
 |---|---|
-|**bio**  <br>*optional*|string|
-|**name**  <br>*optional*|string|
-|**user_id**  <br>*optional*|integer|
-|**value**  <br>*optional*|string|
+|**bio**  <br>*可选*|string|
+|**name**  <br>*可选*|string|
+|**user_id**  <br>*可选*|integer|
+|**value**  <br>*可选*|string|
 
 
 <a name="types-updatejobrequest"></a>
 ### types.UpdateJobRequest
 
-|Name|Schema|
+|名称|类型|
 |---|---|
-|**bio**  <br>*optional*|string|
-|**user_id**  <br>*optional*|integer|
+|**bio**  <br>*可选*|string|
+|**user_id**  <br>*可选*|integer|
 
 
 <a name="types-updateoauthrequest"></a>
 ### types.UpdateOauthRequest
 
-|Name|Schema|
+|名称|类型|
 |---|---|
-|**bio**  <br>*optional*|string|
-|**client_id**  <br>*optional*|string|
-|**client_secret**  <br>*optional*|string|
-|**name**  <br>*optional*|enum (github, google)|
-|**redirect_url**  <br>*optional*|string|
+|**bio**  <br>*可选*|string|
+|**client_id**  <br>*可选*|string|
+|**client_secret**  <br>*可选*|string|
+|**name**  <br>*可选*|enum (github, google)|
+|**redirect_url**  <br>*可选*|string|
 
 
 <a name="types-updateschedulerclusterrequest"></a>
 ### types.UpdateSchedulerClusterRequest
 
-|Name|Schema|
+|名称|类型|
 |---|---|
-|**bio**  <br>*optional*|string|
-|**client_config**  <br>*optional*|[types.SchedulerClusterClientConfig](#types-schedulerclusterclientconfig)|
-|**config**  <br>*optional*|[types.SchedulerClusterConfig](#types-schedulerclusterconfig)|
-|**is_default**  <br>*optional*|boolean|
-|**name**  <br>*optional*|string|
-|**scopes**  <br>*optional*|[types.SchedulerClusterScopes](#types-schedulerclusterscopes)|
-|**seed_peer_cluster_id**  <br>*optional*|integer|
+|**bio**  <br>*可选*|string|
+|**client_config**  <br>*可选*|[types.SchedulerClusterClientConfig](#types-schedulerclusterclientconfig)|
+|**config**  <br>*可选*|[types.SchedulerClusterConfig](#types-schedulerclusterconfig)|
+|**is_default**  <br>*可选*|boolean|
+|**name**  <br>*可选*|string|
+|**scopes**  <br>*可选*|[types.SchedulerClusterScopes](#types-schedulerclusterscopes)|
+|**security_group_id**  <br>*可选*|integer|
+|**seed_peer_cluster_id**  <br>*可选*|integer|
 
 
 <a name="types-updateschedulerrequest"></a>
 ### types.UpdateSchedulerRequest
 
-|Name|Schema|
+|名称|类型|
 |---|---|
-|**idc**  <br>*optional*|string|
-|**ip**  <br>*optional*|string|
-|**location**  <br>*optional*|string|
-|**net_topology**  <br>*optional*|string|
-|**port**  <br>*optional*|integer|
-|**scheduler_cluster_id**  <br>*optional*|integer|
-|**scheduler_id**  <br>*optional*|integer|
+|**idc**  <br>*可选*|string|
+|**ip**  <br>*可选*|string|
+|**location**  <br>*可选*|string|
+|**net_topology**  <br>*可选*|string|
+|**port**  <br>*可选*|integer|
+|**scheduler_cluster_id**  <br>*可选*|integer|
+|**scheduler_id**  <br>*可选*|integer|
 
 
 <a name="types-updatesecuritygrouprequest"></a>
 ### types.UpdateSecurityGroupRequest
 
-|Name|Schema|
+|名称|类型|
 |---|---|
-|**bio**  <br>*optional*|string|
-|**name**  <br>*optional*|string|
+|**bio**  <br>*可选*|string|
+|**name**  <br>*可选*|string|
 
 
 <a name="types-updatesecurityrulerequest"></a>
 ### types.UpdateSecurityRuleRequest
 
-|Name|Schema|
+|名称|类型|
 |---|---|
-|**bio**  <br>*optional*|string|
-|**domain**  <br>*optional*|string|
-|**name**  <br>*optional*|string|
-|**proxy_domain**  <br>*optional*|string|
+|**bio**  <br>*可选*|string|
+|**domain**  <br>*可选*|string|
+|**name**  <br>*可选*|string|
+|**proxy_domain**  <br>*可选*|string|
 
 
 <a name="types-updateseedpeerclusterrequest"></a>
 ### types.UpdateSeedPeerClusterRequest
 
-|Name|Schema|
+|名称|类型|
 |---|---|
-|**bio**  <br>*optional*|string|
-|**config**  <br>*optional*|[types.SeedPeerClusterConfig](#types-seedpeerclusterconfig)|
-|**is_default**  <br>*optional*|boolean|
-|**name**  <br>*optional*|string|
-|**scopes**  <br>*optional*|[types.SeedPeerClusterScopes](#types-seedpeerclusterscopes)|
+|**bio**  <br>*可选*|string|
+|**config**  <br>*可选*|[types.SeedPeerClusterConfig](#types-seedpeerclusterconfig)|
+|**is_default**  <br>*可选*|boolean|
+|**name**  <br>*可选*|string|
+|**scopes**  <br>*可选*|[types.SeedPeerClusterScopes](#types-seedpeerclusterscopes)|
 
 
 <a name="types-updateseedpeerrequest"></a>
 ### types.UpdateSeedPeerRequest
 
-|Name|Schema|
+|名称|类型|
 |---|---|
-|**download_port**  <br>*optional*|integer|
-|**idc**  <br>*optional*|string|
-|**ip**  <br>*optional*|string|
-|**location**  <br>*optional*|string|
-|**net_topology**  <br>*optional*|string|
-|**port**  <br>*optional*|integer|
-|**seed_peer_cluster_id**  <br>*optional*|integer|
-|**type**  <br>*optional*|enum (super, strong, weak)|
+|**download_port**  <br>*可选*|integer|
+|**idc**  <br>*可选*|string|
+|**ip**  <br>*可选*|string|
+|**location**  <br>*可选*|string|
+|**net_topology**  <br>*可选*|string|
+|**port**  <br>*可选*|integer|
+|**seed_peer_cluster_id**  <br>*可选*|integer|
+|**type**  <br>*可选*|enum (super, strong, weak)|
 
 
 <a name="types-updateuserrequest"></a>
 ### types.UpdateUserRequest
 
-|Name|Schema|
+|名称|类型|
 |---|---|
-|**avatar**  <br>*optional*|string|
-|**bio**  <br>*optional*|string|
-|**email**  <br>*optional*|string|
-|**location**  <br>*optional*|string|
-|**phone**  <br>*optional*|string|
+|**avatar**  <br>*可选*|string|
+|**bio**  <br>*可选*|string|
+|**email**  <br>*可选*|string|
+|**location**  <br>*可选*|string|
+|**phone**  <br>*可选*|string|
 
 
 
